@@ -2,7 +2,7 @@
 
 This folder contains [Claude Code](https://code.claude.com) memory and skill
 files that significantly improve AI-assisted Igor Pro programming. They are
-designed for use with **Igor Pro 10** on macOS and Windows.
+designed for use with **Igor Pro 9 and 10** on macOS and Windows.
 
 These files were developed at the APS beamline 12-ID (Argonne National
 Laboratory) for the [Irena](https://usaxs.xray.aps.anl.gov/software/irena), 
