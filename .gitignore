@@ -1,0 +1,5 @@
+# macOS
+.DS_Store
+
+# Personal Claude overrides — not for sharing
+CLAUDE.local.md
