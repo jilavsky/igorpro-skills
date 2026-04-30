@@ -9,6 +9,7 @@ with links to the official WaveMetrics online documentation for each command.
 When you need the full signature, parameters, flags, or examples for any command,
 fetch the documentation page at the URL shown next to that command.
 
+Igor names are case-insensitive for identifiers (variables, waves, functions)
 ---
 
 ## A
