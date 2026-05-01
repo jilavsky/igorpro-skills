@@ -9,9 +9,10 @@ with links to the official WaveMetrics online documentation for each command.
 When you need the full signature, parameters, flags, or examples for any command,
 fetch the documentation page at the URL shown next to that command.
 
-Problematic Igor rules:
+**Problematic Igor rules:**
 Igor names are case-insensitive for identifiers (variables, waves, functions)
 MatrixOp cannot use p,q,r,s point addressing method
+
 ---
 
 ## A
