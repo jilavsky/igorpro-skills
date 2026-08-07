@@ -1,77 +1,72 @@
 # Global Claude Code Instructions — Jan Ilavsky
 
 ## Identity and context
-I am a scientist at Argonne National Laboratory working on small-angle X-ray
-scattering (SAXS/USAXS). My primary programming language for data analysis
-is Igor Pro 10 (64-bit only). I also work in Python for pipeline/automation.
-I use macOS and Windows.
+Scientist at Argonne National Laboratory (APS beamline 12-ID/9-ID), working on
+small-angle X-ray scattering (SAXS/USAXS/WAXS). Most code is **Python**
+(pyIrena, Matilda, pyirena-ai, DataReporter, MailToVault, MCP servers). Igor
+Pro 10 is maintained in exactly one repo, `SAXS_IgorCode`. macOS + Windows.
 
-## Igor Pro — always apply these rules
+Scientific correctness outranks style, cleverness and refactoring everywhere.
 
-### Version and environment
-- Igor Pro 10, 64-bit only. Never suggest 32-bit XOP patterns.
-- Target `#pragma IgorVersion=9.04` or higher unless told otherwise.
-- Always include at the top of new .ipf files:
-  ```igor
-  #pragma TextEncoding = "UTF-8"
-  #pragma rtGlobals=3
-  #pragma DefaultTab={3,20,4}
-  #pragma IgorVersion=9.04
-  ```
+## Read the repo's own CLAUDE.md first
+Repo-level `CLAUDE.md` is authoritative and overrides anything here. Follow its
+pointers instead of grepping the tree — the map exists so you don't have to
+re-derive it every session.
 
-### Wave and data folder references — critical rules
-- NEVER use a wave name directly inside a function without a WAVE declaration.
-- ALWAYS use `WAVE/Z` when a wave may not exist, then check `WaveExists()`.
-- ALWAYS save and restore the current data folder: `DFREF saveDF = GetDataFolderDFR()` ... `SetDataFolder saveDF`.
-- NEVER build a path mid-expression: build the full string first, then apply `$` once.
-  - WRONG: `WAVE w = root:myData:$name`
-  - CORRECT: `WAVE w = $("root:myData:" + name)` or `WAVE w = dfr:$name`
-- Use `DFREF` parameters in functions rather than string paths wherever possible.
-- Use `Make/FREE` for temporary waves inside functions.
+## Python — house standard
+Keep packages as similar as possible. Deviations need a reason written down
+next to them (a comment in `pyproject.toml`, not just a commit message).
 
-### Compiler rules (Igor 10 breaking changes)
-- Unreachable code before `case` labels in `switch`/`strswitch` is a compile ERROR.
-- `#pragma independentModule=ProcGlobal` is a compile ERROR in Igor 10.
-- `ExperimentModified` is NOT triggered by same-value assignments in Igor 10.
+- **Version floor `>=3.10`**; support through 3.13; cap conda envs at `<3.14`.
+  PEP 604 (`X | None`), `match`, and `zip(strict=)` are all fair game.
+- **Build**: `setuptools>=77` + `wheel`. Static `version` in `pyproject.toml`
+  is authoritative; do not add `hatch-vcs` or dynamic version schemes.
+- **Layout**: flat package (`<pkg>/` at repo root), tests in top-level `tests/`.
+- **Lint/format**: `ruff` only — no `black`, no `flake8`. `line-length = 100`,
+  `select = ["E","F","W","I","UP","B"]`,
+  `ignore = ["E501","E741","E701","E702","E402"]`.
+  `E741` stays off permanently: `I` (intensity), `l` (level), `Q` are physics
+  notation, not sloppy naming. Do not rename them to `intensity_array`.
+- **Qt**: PySide6 only. Never add PyQt6 — the two collide in one environment.
+  Qt belongs in an optional `[gui]` extra, never in core dependencies, and is
+  always imported through a single `<pkg>/gui/_qt.py` shim.
+- **Layering**: core math imports numpy/scipy only; no Qt and no matplotlib in
+  core/io/batch/api layers. GUI panels stay thin — numpy loops belong in core.
+- **Dependencies**: do not add one without asking. Prefer numpy, scipy, h5py,
+  matplotlib, PySide6 — the set already in use.
+- **Every repo carries**: `README.md`, `CHANGELOG.md`, `LICENSE`,
+  `environment.yml` (conda env named after the package), `PLAN.md` for
+  in-progress design work.
 
-### Panel and GUI code — critical rules
-- ALWAYS call `PauseUpdate` as the first line of any panel-building function.
-- ALWAYS use a running `yPos` variable — never hardcode every y coordinate independently.
-- ALWAYS calculate panel height before `NewPanel` by summing control heights + gaps.
-  - Title area: ~45px. Each control row: ~22-25px. Section subtitle: ~28px. Bottom margin: ~30px.
-  - Add 10% headroom. Better to have a slightly tall panel than clipped controls.
-- Standard control heights: Button=20-22px, CheckBox=14px, SetVariable=18-23px, PopupMenu=21px.
-- Standard gaps: between controls=5px, between sections=12px.
-- Left margin: 5px. Panel width: 430px (single-column) or 640px (two-column).
-- Title style: `font="Times New Roman"`, `fstyle=3`, `fColor=(0,0,52224)`, `frame=0`.
-- Decorative line below title: `TitleBox FakeLine1, title=" ", labelBack=(0,0,52224), size={width,3}`.
-- GetHelp button: always red `fColor=(65535,32768,32768)`, size=80×15, top-right corner.
-- Primary action button: green `fColor=(32768,65535,49386)`, size ~200×22.
-- See skill: `/igor-panel` for full geometry reference and worked example.
+## Scientific conventions
+- Q in Å⁻¹, intensity in cm⁻¹ (absolute) where calibration exists — state
+  otherwise explicitly in the docstring.
+- NXcanSAS HDF5 is the interchange format; preserve backwards compatibility of
+  saved files, always. `from_dict()` supplies a default for every field.
+- Keep Irena/Igor terminology and parameter names that users already know.
+  When an algorithm comes from Irena, say so in the docstring.
+- Results are validated against Igor Irena. A "cleaner" rewrite that shifts a
+  numerical result is a regression, not an improvement.
 
-### Command lookup
-When unsure of a command's exact syntax, flags, or output variables:
-- Fetch: `https://docs.wavemetrics.com/igorpro/commands/<commandname-lowercase>`
-- Full index: https://docs.wavemetrics.com/igorpro/commands
-- Do NOT guess flag syntax — fetch the doc page instead.
+## Igor Pro — SAXS_IgorCode only
+Igor Pro 10, 64-bit only; never suggest 32-bit XOP patterns. Full conventions
+live in `SAXS_IgorCode/CLAUDE.md`. Load the skills rather than guessing:
+`/igor-commands`, `/igor-panel`, `/igor-wave-dfref`, `/igor-10`, `/igor-python`.
 
-### General Igor style
-- Use `Function` not `Macro` for all new code.
-- Package globals go in `root:Packages:<PackageName>:`.
-- Use `Static Function` for internal helpers to avoid name collisions.
-- Use `#pragma moduleName` to namespace modules.
-- Prefer `DFREF` parameters over `SetDataFolder` + string paths in function signatures.
-- Use `Printf` not `Print` for formatted output.
-- Always check panel version numbers with `IR1_UpdatePanelVersionNumber` pattern.
+Non-negotiable even outside that repo:
+- `Function`, never `Macro`. `Static Function` for internal helpers.
+- Never reference a wave without a `WAVE` declaration; `WAVE/Z` + `WaveExists()`
+  whenever it may not exist.
+- Always save and restore the data folder (`DFREF saveDF = GetDataFolderDFR()`).
+- Build a path string fully, then apply `$` once — never `$` mid-expression.
+- Package globals live in `root:Packages:<PackageName>:`.
+- Never guess command syntax: fetch
+  `https://docs.wavemetrics.com/igorpro/commands/<name-lowercase>`.
 
-## Python
-- Python 3.x. Use numpy, scipy, h5py for data work.
-- For Igor↔Python bridge: use `igorpro` module (Igor 10 only).
-  - `igorpro.fn.<functionname>()` to call Igor functions from Python.
-  - `wave.asarray()` to convert Igor wave to numpy array.
-
-## General coding preferences
+## Working style
+- Prefer extending the thing that already does 80% of the job over adding a
+  parallel implementation.
+- Ask before large refactors, before adding dependencies, and before changing
+  a saved-file format.
+- Comments and docstrings in English; Google-style docstrings on public APIs.
 - Prefer explicit over implicit — name things clearly.
-- Add `help={"..."}` strings to all panel controls.
-- Comments in English.
-- When generating a new .ipf file, always include a version history block at the top.
