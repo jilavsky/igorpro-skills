@@ -1,27 +1,22 @@
 # Cross-repo convention drift — August 2026
 
 Survey of the Python packages under `~/GitHub`, against the baseline now written
-into `global-CLAUDE.md`. **Nothing was changed in these repos** — this is the
-report. Rows marked ⚠ are worth fixing; the rest is cosmetic.
+into `global-CLAUDE.md`. Rows marked ⚠ are worth fixing; the rest is cosmetic.
+
+**Status:** the pyirena items were applied 2026-08-07 and have been struck from
+this report. Everything remaining below is still outstanding.
 
 ## 1. Python version floor
 
 | Repo | `requires-python` | `environment.yml` | |
 |---|---|---|---|
-| pyirena | `>=3.9` | `>=3.10,<3.14` | ⚠ contradicts itself |
+| pyirena | `>=3.10` | `>=3.10,<3.14` | ✔ baseline |
 | DataReporter | `>=3.9` | `3.11` | ⚠ contradicts itself |
 | pyirena-ai | `>=3.10` | `>=3.10,<3.14` | ✔ baseline |
 | MailToVault | `>=3.10` | `3.12` | ok |
 | PCA_for_SAXS | `>=3.10` | `3.12` | ok |
 | Matilda | `>=3.11` | `3.12` | higher floor |
 | bait_mcp | `>=3.11` | — | higher floor |
-
-**The expensive one:** `pyirena/CLAUDE.md` states *"Python 3.9 is the floor, so
-no `match`, no PEP 604 `X | Y` in runtime annotations."* No environment you
-actually ship or test against is 3.9 — `environment.yml` already requires
-`>=3.10`. That sentence makes every session write deliberately dated code for a
-platform nobody uses. Raising `requires-python` to `>=3.10` and deleting the
-sentence is the single highest-value fix in this report.
 
 Baseline: `>=3.10`, classifiers through 3.13, conda cap `<3.14`.
 
@@ -43,7 +38,7 @@ already enforces against the git tag).
 
 | Repo | line-length | ruff `select` | black? |
 |---|---|---|---|
-| pyirena | 100 | defaults, `ignore = [E741,E701,E702,E402]` | no |
+| pyirena | 100 | `E,F,W,I`, `ignore = [E501,E741,E701,E702,E402]` | no |
 | pyirena-ai | 100 | `E,F,W,I,B,UP` | ⚠ configured |
 | DataReporter | 100 | defaults | ⚠ configured + dev dep |
 | MailToVault | 100 | `E,F,W,I,UP,B,C4,SIM` | no |
@@ -66,35 +61,35 @@ Matilda's `line-length = 200` is annotated as deliberate ("legacy code has long
 lines; do not fight it yet") — legitimate, but it should converge to 100 as the
 legacy files get touched.
 
-## 4. Qt toolkit ⚠ — real conflict
+pyirena took `W` and `I` on 2026-08-07 and deliberately deferred `UP` and `B`:
+enabling them there is 1541 findings, of which ~1050 are annotation rewrites
+(`Optional[X]` → `X | None`) and ~100 need hand review, including 7 genuine
+`B023` loop-variable captures. Worth doing, but as its own reviewable pass — the
+`B023` hits in particular are potential bugs, not style.
+
+## 4. Qt toolkit 
 
 - `pyirena` → PySide6, in `[gui]` extra, behind `gui/_qt.py` shim ✔
 - `MailToVault` → PySide6, in `[gui]` extra, behind `gui/_qt.py` shim ✔
 - `Matilda` → PySide6 in `[gui]`, pinned `>=6.4,<6.8` (GLIBC 2.28 on RHEL 8)
-- `DataReporter` → **PyQt6 as a core dependency** ⚠⚠
-
-Matilda's own `pyproject.toml` carries the warning: *"install only ONE of
-PySide6 or PyQt6 — having both on the same environment causes Qt platform-plugin
-conflicts on macOS (cocoa not found)."* DataReporter violates that, and does it
-in core deps rather than an extra — so a headless CLI install of DataReporter
-drags Qt in, and any environment holding both DataReporter and pyirena is in the
-exact failure mode Matilda documented.
-
-Two changes, both contained: move PyQt6 → PySide6, and move it from
-`dependencies` into a `[gui]` extra behind a `_qt.py` shim like the other two.
+- `DataReporter` → PySide6 in [gui]
 
 Also worth reconciling: pyirena pins `PySide6>=6.4.0,!=6.7.*,!=6.10.*` while
-Matilda pins `>=6.4,<6.8`. Both constraints are justified, but they're
-mutually incompatible in a shared environment.
+Matilda pins `>=6.4,<6.8`. Both constraints are justified. Correction to the
+original report — they are *not* mutually incompatible: the intersection is
+6.4.x–6.6.x, so a shared environment resolves, just onto an old Qt. Left
+unchanged in both repos, since narrowing pyirena to match Matilda's RHEL 8
+GLIBC cap would give up 6.8/6.9 for everyone else.
 
 ## 5. Layout and housekeeping (cosmetic)
 
 - **src-layout**: DataReporter, PCA_for_SAXS. Flat layout: everything else.
 - **Tests**: `tests/` at repo root everywhere except pyirena (`pyirena/tests/`,
   excluded from the wheel — deliberate and documented, fine).
-- **Plan file naming**: `IMPROVEMENT_PLAN.md` (pyirena, Matilda), `PLAN.md`
-  (DataReporter, MailToVault, BeamlineAdvisor), `DEVELOPMENT_PLAN.md`
-  (PCA_for_SAXS), `REFACTOR_PLAN.md` + `todo.md` (bait_mcp). Pick one name.
+- **Plan file naming**: `PLAN.md` (pyirena, DataReporter, MailToVault,
+  BeamlineAdvisor), `IMPROVEMENT_PLAN.md` (Matilda), `DEVELOPMENT_PLAN.md`
+  (PCA_for_SAXS), `REFACTOR_PLAN.md` + `todo.md` (bait_mcp). `PLAN.md` is the
+  baseline; the remaining three should converge.
 - **Missing `CHANGELOG.md`**: PCA_for_SAXS, bait_mcp, BeamlineAdvisor.
 - **DataReporter author field** is still `DataReporter Authors
   <example@example.com>`.
@@ -122,9 +117,13 @@ mutually incompatible in a shared environment.
 
 ## Suggested order of work
 
-1. pyirena: `requires-python = ">=3.10"`, delete the 3.9 sentence from `CLAUDE.md`.
-2. DataReporter: PyQt6 → PySide6, move to `[gui]` extra.
-3. Drop `[tool.black]` from pyirena-ai and DataReporter; add `ignore = ["E741"]`
+1. DataReporter: `requires-python = ">=3.10"`.
+2. Drop `[tool.black]` from pyirena-ai and DataReporter; add `ignore = ["E741"]`
    to pyirena-ai, MailToVault, bait_mcp.
-4. Add short `CLAUDE.md` to Matilda, pyirena-ai, DataReporter, MailToVault.
+3. Add short `CLAUDE.md` to Matilda, pyirena-ai, DataReporter, MailToVault.
+4. pyirena: separate pass for ruff `UP` + `B` (see §3) — the 7 `B023` findings
+   should be looked at as possible bugs.
 5. Everything else is cosmetic — fold in as those files get touched anyway.
+
+**Done:** pyirena floor → 3.10 (§1); pyirena ruff `E,F,W,I` (§3); DataReporter
+PyQt6 → PySide6 in `[gui]` (§4); pyirena `IMPROVEMENT_PLAN.md` → `PLAN.md` (§5).
