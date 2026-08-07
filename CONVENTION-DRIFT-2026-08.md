@@ -3,8 +3,9 @@
 Survey of the Python packages under `~/GitHub`, against the baseline now written
 into `global-CLAUDE.md`. Rows marked ⚠ are worth fixing; the rest is cosmetic.
 
-**Status:** the pyirena items were applied 2026-08-07 and have been struck from
-this report. Everything remaining below is still outstanding.
+**Status:** the pyirena items were applied 2026-08-07 and the Matilda items on
+2026-08-07; both have been struck from this report. Everything remaining below
+is still outstanding.
 
 ## 1. Python version floor
 
@@ -15,24 +16,28 @@ this report. Everything remaining below is still outstanding.
 | pyirena-ai | `>=3.10` | `>=3.10,<3.14` | ✔ baseline |
 | MailToVault | `>=3.10` | `3.12` | ok |
 | PCA_for_SAXS | `>=3.10` | `3.12` | ok |
-| Matilda | `>=3.11` | `3.12` | higher floor |
+| Matilda | `>=3.11` | `3.12` | higher floor, reason documented ✔ |
 | bait_mcp | `>=3.11` | — | higher floor |
 
 Baseline: `>=3.10`, classifiers through 3.13, conda cap `<3.14`.
+
+Matilda keeps `>=3.11` deliberately — server and CI matrix are 3.11/3.12, so
+`>=3.10` would be an untested claim. The reason is now written next to the pin
+in `pyproject.toml`, which is what the baseline asks for.
 
 ## 2. Build backend and versioning
 
 | Repo | Backend | Version source |
 |---|---|---|
-| pyirena, MailToVault | setuptools≥77 | static |
+| pyirena, MailToVault, Matilda | setuptools≥77 | static |
 | DataReporter, PCA_for_SAXS | setuptools≥64/68 | static |
 | pyirena-ai | setuptools≥61 | `dynamic` → `__version__` attr |
-| Matilda | hatchling + hatch-vcs | git tags ⚠ |
 | bait_mcp | hatchling | static |
 
-Three different version schemes across seven packages. Baseline: setuptools≥77
-+ static version in `pyproject.toml` (which is what pyirena's publish workflow
-already enforces against the git tag).
+Baseline: setuptools≥77 + static version in `pyproject.toml` (which is what
+pyirena's publish workflow already enforces against the git tag). Only
+`pyirena-ai`'s `dynamic` → `__version__` scheme is still off-baseline, and it is
+harmless.
 
 ## 3. Lint and format ⚠
 
@@ -87,9 +92,9 @@ GLIBC cap would give up 6.8/6.9 for everyone else.
 - **Tests**: `tests/` at repo root everywhere except pyirena (`pyirena/tests/`,
   excluded from the wheel — deliberate and documented, fine).
 - **Plan file naming**: `PLAN.md` (pyirena, DataReporter, MailToVault,
-  BeamlineAdvisor), `IMPROVEMENT_PLAN.md` (Matilda), `DEVELOPMENT_PLAN.md`
-  (PCA_for_SAXS), `REFACTOR_PLAN.md` + `todo.md` (bait_mcp). `PLAN.md` is the
-  baseline; the remaining three should converge.
+  BeamlineAdvisor, Matilda), `DEVELOPMENT_PLAN.md` (PCA_for_SAXS),
+  `REFACTOR_PLAN.md` + `todo.md` (bait_mcp). `PLAN.md` is the baseline; the
+  remaining two should converge.
 - **Missing `CHANGELOG.md`**: PCA_for_SAXS, bait_mcp, BeamlineAdvisor.
 - **DataReporter author field** is still `DataReporter Authors
   <example@example.com>`.
@@ -106,11 +111,11 @@ GLIBC cap would give up 6.8/6.9 for everyone else.
 - The global file also duplicated the panel-geometry reference that
   `/igor-panel` already contains. When that skill fires you were paying for the
   same content twice. Global now points at the skills instead of restating them.
-- **Only 5 of ~35 repos have a `CLAUDE.md`** (pyirena, SAXS_IgorCode, bait_mcp,
-  bluesky-bits, and `custom-double-click` as `AGENTS.md`). For an active repo,
-  a 25–40 line orientation file is strongly net-positive: it costs ~400 tokens
-  per session and saves several thousand in exploratory grepping. Worth adding
-  to Matilda, pyirena-ai, DataReporter and MailToVault.
+- **Only 6 of ~35 repos have a `CLAUDE.md`** (pyirena, Matilda, SAXS_IgorCode,
+  bait_mcp, bluesky-bits, and `custom-double-click` as `AGENTS.md`). For an
+  active repo, a 25–40 line orientation file is strongly net-positive: it costs
+  ~400 tokens per session and saves several thousand in exploratory grepping.
+  Worth adding to pyirena-ai, DataReporter and MailToVault.
 - `pyirena/CLAUDE.md` at 220 lines is large but earns it — it's a genuine map of
   a seven-layer codebase and its §7 "maintaining this file" discipline is the
   right model. Use it as the template for the four repos above, scaled down.
@@ -120,10 +125,18 @@ GLIBC cap would give up 6.8/6.9 for everyone else.
 1. DataReporter: `requires-python = ">=3.10"`.
 2. Drop `[tool.black]` from pyirena-ai and DataReporter; add `ignore = ["E741"]`
    to pyirena-ai, MailToVault, bait_mcp.
-3. Add short `CLAUDE.md` to Matilda, pyirena-ai, DataReporter, MailToVault.
+3. Add short `CLAUDE.md` to pyirena-ai, DataReporter, MailToVault.
 4. pyirena: separate pass for ruff `UP` + `B` (see §3) — the 7 `B023` findings
    should be looked at as possible bugs.
-5. Everything else is cosmetic — fold in as those files get touched anyway.
+5. Matilda: same separate `UP` + `B` pass — currently 9 `UP`, 11 `B`, including
+   2 `B023` loop-variable captures and 4 `B905` bare `zip()`. Small enough to be
+   one reviewable commit, but it touches the reduction path, so not folded into
+   the packaging cleanup.
+6. Everything else is cosmetic — fold in as those files get touched anyway.
 
 **Done:** pyirena floor → 3.10 (§1); pyirena ruff `E,F,W,I` (§3); DataReporter
 PyQt6 → PySide6 in `[gui]` (§4); pyirena `IMPROVEMENT_PLAN.md` → `PLAN.md` (§5).
+Matilda 2026-08-07: hatchling + hatch-vcs → setuptools≥77 + static version (§2);
+`>=3.11` deviation documented in `pyproject.toml` (§1); `IMPROVEMENT_PLAN.md` →
+`PLAN.md` (§5); `CLAUDE.md` added (§6). Still open there: `line-length = 200`
+(§3, deliberate for now) and the `UP` + `B` pass above.
