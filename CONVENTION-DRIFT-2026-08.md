@@ -76,8 +76,11 @@ enabling them there is 1541 findings, of which ~1050 are annotation rewrites
 
 - `pyirena` → PySide6, in `[gui]` extra, behind `gui/_qt.py` shim ✔
 - `MailToVault` → PySide6, in `[gui]` extra, behind `gui/_qt.py` shim ✔
-- `Matilda` → PySide6 in `[gui]`, pinned `>=6.4,<6.8` (GLIBC 2.28 on RHEL 8)
-- `DataReporter` → PySide6 in [gui]
+- `Matilda` → PySide6 in `[gui]`, behind `gui/_qt.py` shim ✔, pinned
+  `>=6.4,<6.8` (GLIBC 2.28 on RHEL 8)
+- `DataReporter` → PySide6 in `[gui]`, behind `gui/_qt.py` shim ✔
+
+All four Qt repos now reach the binding through a single `gui/_qt.py`.
 
 Also worth reconciling: pyirena pins `PySide6>=6.4.0,!=6.7.*,!=6.10.*` while
 Matilda pins `>=6.4,<6.8`. Both constraints are justified. Correction to the
@@ -101,16 +104,6 @@ GLIBC cap would give up 6.8/6.9 for everyone else.
 
 ## 6. Cost and efficiency notes
 
-- `SAXS_IgorCode/CLAUDE.md` contained `@~/.claude/CLAUDE.md`. The global file
-  loads automatically in Claude Code, so that line pulled it in a second time —
-  the whole global file was being paid for twice in every Igor session.
-  Removed.
-- The old global file spent ~57 of 78 lines on Igor Pro rules that were loaded
-  into every Python session too. Those lines now sit in
-  `SAXS_IgorCode/CLAUDE.md`, where they're loaded only when relevant.
-- The global file also duplicated the panel-geometry reference that
-  `/igor-panel` already contains. When that skill fires you were paying for the
-  same content twice. Global now points at the skills instead of restating them.
 - **Only 6 of ~35 repos have a `CLAUDE.md`** (pyirena, Matilda, SAXS_IgorCode,
   bait_mcp, bluesky-bits, and `custom-double-click` as `AGENTS.md`). For an
   active repo, a 25–40 line orientation file is strongly net-positive: it costs
@@ -122,7 +115,6 @@ GLIBC cap would give up 6.8/6.9 for everyone else.
 
 ## Suggested order of work
 
-1. DataReporter: `requires-python = ">=3.10"`.
 2. Drop `[tool.black]` from pyirena-ai and DataReporter; add `ignore = ["E741"]`
    to pyirena-ai, MailToVault, bait_mcp.
 3. Add short `CLAUDE.md` to pyirena-ai, DataReporter, MailToVault.
@@ -138,5 +130,7 @@ GLIBC cap would give up 6.8/6.9 for everyone else.
 PyQt6 → PySide6 in `[gui]` (§4); pyirena `IMPROVEMENT_PLAN.md` → `PLAN.md` (§5).
 Matilda 2026-08-07: hatchling + hatch-vcs → setuptools≥77 + static version (§2);
 `>=3.11` deviation documented in `pyproject.toml` (§1); `IMPROVEMENT_PLAN.md` →
-`PLAN.md` (§5); `CLAUDE.md` added (§6). Still open there: `line-length = 200`
-(§3, deliberate for now) and the `UP` + `B` pass above.
+`PLAN.md` (§5); `CLAUDE.md` added (§6); `gui/_qt.py` shim (§4) — nine duplicated
+`try PySide6 / except PyQt6` blocks collapsed into one, with a source-scanning
+test that also guards the headless daemon path. Still open there:
+`line-length = 200` (§3, deliberate for now) and the `UP` + `B` pass above.
