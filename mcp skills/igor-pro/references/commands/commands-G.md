@@ -1,0 +1,64 @@
+# Igor Pro commands starting with G
+
+Each line: **Name** - one-line summary - local page to read with read_file for full syntax, flags, outputs, examples.
+
+- **gamma** - The gammma function returns the value of the gamma function of num. If num is complex, it returns a complex result. - `references/manual/commands/gamma.md`
+- **gammaEuler** - The gammaEuler function returns the the Euler-Mascheroni constant 0.5772156649015328606065. - `references/manual/commands/gammaeuler.md`
+- **gammaInc** - The gammaInc function returns the value of the incomplete gamma function, defined by the integral. - `references/manual/commands/gammainc.md`
+- **gammaNoise** - The gammaNoise function returns a pseudo-random value from the gamma distribution. - `references/manual/commands/gammanoise.md`
+- **gammln** - The gammln function returns the natural log of the gamma function of num, where. - `references/manual/commands/gammln.md`
+- **gammp** - The gammp function returns the regularized incomplete gamma function P(a,x), where a > 0, x >= 0. - `references/manual/commands/gammp.md`
+- **gammq** - The gammq function returns the regularized incomplete gamma function 1-P(a,x), where a > 0, x >= 0. - `references/manual/commands/gammq.md`
+- **Gauss** - The Gauss function returns a normalized Gaussian for the specified dimension. - `references/manual/commands/gauss.md`
+- **Gauss1D** - The Gauss1D function returns the value of a Gaussian peak defined by the coefficients in the wave w. The equation is the same as the Gauss curve fit. - `references/manual/commands/gauss1d.md`
+- **Gauss2D** - The Gauss2D function returns the value of a two-dimensional Gaussian peak defined by the coefficients in the wave w. - `references/manual/commands/gauss2d.md`
+- **GBLoadWave** - The GBLoadWave operation loads data from a binary file into waves. For more complex applications such as loading structured data into Igor structures see the… - `references/manual/commands/gbloadwave.md`
+- **gcd** - The gcd function calculates the greatest common divisor of A and B. Both A and B are assumed to be integers. - `references/manual/commands/gcd.md`
+- **GeometricMean** - The GeometricMean function returns the arithmetic-geometric mean of two positive real numbers a and b. - `references/manual/commands/geometricmean.md`
+- **GetAxis** - The GetAxis operation determines the axis range and sets the variables V_min and V_max to the minimum and maximum values of the named axis. - `references/manual/commands/getaxis.md`
+- **GetBrowserLine** - The GetBrowserLine function returns the zero-based line number of the data folder referenced by fullPathStr. - `references/manual/commands/getbrowserline.md`
+- **GetBrowserSelection** - The GetBrowserSelection function returns a string containing the full path, quoted if necessary, to a selected Data Browser item. - `references/manual/commands/getbrowserselection.md`
+- **GetCamera** - The GetCamera operation provides information about cameras connected to your computer, their current settings, and the options they support. - `references/manual/commands/getcamera.md`
+- **GetDataFolder** - The GetDataFolder function returns a string containing the name of or full path to the current data folder or, if dfr is present, the specified data folder. - `references/manual/commands/getdatafolder.md`
+- **GetDataFolderDFR** - The GetDataFolderDFR function returns the data folder reference for the current data folder. - `references/manual/commands/getdatafolderdfr.md`
+- **GetDefaultFont** - The GetDefaultFont function returns a string containing the name of the default font for the named window or subwindow. - `references/manual/commands/getdefaultfont.md`
+- **GetDefaultFontSize** - The GetDefaultFontSize function returns the default font size of the graph or of the graph's axis (in points) in the specified window or subwindow. - `references/manual/commands/getdefaultfontsize.md`
+- **GetDefaultFontStyle** - The GetDefaultFontStyle function returns the default font style of the graph or of the graph's axis in the specified window or subwindow. - `references/manual/commands/getdefaultfontstyle.md`
+- **GetDimLabel** - The GetDimLabel function returns a string containing the label for the given dimension or dimension element. - `references/manual/commands/getdimlabel.md`
+- **GetEnvironmentVariable** - The GetEnvironmentVariable function returns a string containing the current value of the specified environment variable for the currently running Igor process. - `references/manual/commands/getenvironmentvariable.md`
+- **GetErrMessage** - GetErrMessage returns a string containing an explanation of the error associated with errorCode. - `references/manual/commands/geterrmessage.md`
+- **GetFileFolderInfo** - The GetFileFolderInfo operation returns and optionally prints information about a file or folder. - `references/manual/commands/getfilefolderinfo.md`
+- **GetFormula** - The GetFormula function returns a string containing the named object's dependency formula. The named object must be a wave, numeric variable or string variable. - `references/manual/commands/getformula.md`
+- **GetGizmo** - The GetGizmo operation provides information about a Gizmo display window. - `references/manual/commands/getgizmo.md`
+- **GetIndependentModuleName** - The GetIndependentModuleName function returns the name of the currently running Independent Module. - `references/manual/commands/getindependentmodulename.md`
+- **GetIndexedObjName** - The GetIndexedObjName function returns a string containing the name of the indexth object of the specified type in the data folder specified by the string… - `references/manual/commands/getindexedobjname.md`
+- **GetIndexedObjNameDFR** - The GetIndexedObjNameDFR function returns a string containing the name of the indexth object of the specified type in data folder referenced by dfr. - `references/manual/commands/getindexedobjnamedfr.md`
+- **GetKeyState** - The GetKeyState function returns a bitwise numeric value that indicates the state of certain keyboard keys. - `references/manual/commands/getkeystate.md`
+- **GetLastUserMenuInfo** - The GetLastUserMenuInfo operation sets variables in the local scope to indicate the value of the last selected user-defined menu item. - `references/manual/commands/getlastusermenuinfo.md`
+- **GetMarquee** - The GetMarquee operation provides a way for you to use the marquee as an input mechanism in graphs and page layout windows. - `references/manual/commands/getmarquee.md`
+- **GetMouse** - The GetMouse operation returns information about the position of the input mouse, and the state of the mouse buttons. - `references/manual/commands/getmouse.md`
+- **GetRTErrMessage** - In a user function, GetRTErrMessage returns a string containing the name of the Igor operation that caused the error, a semicolon, and an error message… - `references/manual/commands/getrterrmessage.md`
+- **GetRTError** - The GetRTError function returns information about the error state of Igor's user-defined function runtime execution environment. - `references/manual/commands/getrterror.md`
+- **GetRTLocation** - GetRTLocation is used for profiling Igor procedures. You will typically not call GetRTLocation directly but instead will use it through FunctionProfiling.ipf… - `references/manual/commands/getrtlocation.md`
+- **GetRTLocInfo** - GetRTLocInfo is used for profiling Igor procedures. You will typically not call GetRTLocInfo directly but instead will use it through FunctionProfiling.ipf… - `references/manual/commands/getrtlocinfo.md`
+- **GetRTStackInfo** - The GetRTStackInfo function returns information about "runtime stack" (the chain of macros and functions that are executing). - `references/manual/commands/getrtstackinfo.md`
+- **GetScrapText** - The GetScrapText function returns a string containing any plain text on the Clipboard (aka "scrap"). - `references/manual/commands/getscraptext.md`
+- **GetSelection** - The GetSelection operation returns information about the selection in the specified window. - `references/manual/commands/getselection.md`
+- **GetUserData** - The GetUserData function returns a string containing the user data for a window, subwindow, graph trace or control. - `references/manual/commands/getuserdata.md`
+- **GetWavesDataFolder** - The GetWavesDataFolder function returns a string containing the name of a data folder containing the wave named by waveName. - `references/manual/commands/getwavesdatafolder.md`
+- **GetWavesDataFolderDFR** - The GetWavesDataFolderDFR function returns a data folder reference for the data folder containing the specified wave. - `references/manual/commands/getwavesdatafolderdfr.md`
+- **GetWindow** - The GetWindow operation provides information about the named window or subwindow. The information is returned in variables, strings, and waves. - `references/manual/commands/getwindow.md`
+- **GetWindowBrowserSelection** - The GetWindowBrowserSelection function returns a semicolon seperated string that represents the selection in the Window Browser. - `references/manual/commands/getwindowbrowserselection.md`
+- **GizmoInfo** - The GizmoInfo function is used to determine if a particular name is valid and unique as a Gizmo item names. - `references/manual/commands/gizmoinfo.md`
+- **GizmoScale** - The GizmoScale function returns a scaled dataValue for the specified dimension. - `references/manual/commands/gizmoscale.md`
+- **gnoise** - The gnoise function returns a random value drawn from a Gaussian distribution such that the standard deviation of an infinite number of such values would be… - `references/manual/commands/gnoise.md`
+- **graphemeLength** - The graphemeLength function returns the number of bytes in the grapheme cluster that begins at the startByte offset in the string expression str. - `references/manual/commands/graphemelength.md`
+- **GraphNormal** - The GraphNormal operation returns the target or named graph to the normal mode, exiting any drawing mode that it may be in. - `references/manual/commands/graphnormal.md`
+- **GraphWaveDraw** - The GraphWaveDraw operation initiates drawing a curve composed of yWave vs xWave in the target or named graph. - `references/manual/commands/graphwavedraw.md`
+- **GraphWaveEdit** - The GraphWaveEdit operation initiates editing a wave trace in a graph. The wave trace must already be in the graph. - `references/manual/commands/graphwaveedit.md`
+- **Grep** - The Grep operation copies lines matching a search expression from a file on disk, the Clipboard, or rows from a text wave to a new or existing file, an… - `references/manual/commands/grep.md`
+- **GrepList** - The GrepList function returns each list item in listStr that matches the regular expression regExprStr. - `references/manual/commands/greplist.md`
+- **GrepString** - The GrepString function tests string for a match to the regular expression regExprStr. Returns 1 to indicate a match, or 0 for no match. - `references/manual/commands/grepstring.md`
+- **GroupBox** - The GroupBox operation creates a box to surround and group related controls. - `references/manual/commands/groupbox.md`
+- **GuideInfo** - The GuideInfo function returns a string containing a semicolon-separated list of information about the named guide line in the named host window or subwindow. - `references/manual/commands/guideinfo.md`
+- **GuideNameList** - The GuideNameList function returns a string containing a semicolon-separated list of guide names from the named host window or subwindow. - `references/manual/commands/guidenamelist.md`

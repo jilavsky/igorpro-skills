@@ -1,0 +1,51 @@
+# Igor Pro commands starting with P
+
+Each line: **Name** - one-line summary - local page to read with read_file for full syntax, flags, outputs, examples.
+
+- **p** - The p function returns the row number of the current row of the destination wave when used in a wave assignment statement. - `references/manual/commands/p.md`
+- **p2rect** - The p2rect function returns a complex value in rectangular coordinates derived from the complex value z which is assumed to be in polar coordinates (magnitude… - `references/manual/commands/p2rect.md`
+- **PadString** - The PadString function returns a string identical to str except that it has been extended to a total length of finalLength using bytes of padValue. - `references/manual/commands/padstring.md`
+- **PanelResolution** - The PanelResolution function returns the current resolution of the specified window in pixels per inch. - `references/manual/commands/panelresolution.md`
+- **ParamIsDefault** - The ParamIsDefault function determines if an optional user function parameter pName was specified during the function call. - `references/manual/commands/paramisdefault.md`
+- **ParseFilePath** - The ParseFilePath function provides the ability to manipulate file paths and to extract sections of file paths. - `references/manual/commands/parsefilepath.md`
+- **ParseOperationTemplate** - The ParseOperationTemplate operation helps XOP programmers and WaveMetrics programmers write code to implement Igor operations. - `references/manual/commands/parseoperationtemplate.md`
+- **PathInfo** - The PathInfo operation stores information about the named symbolic path in the following variables. - `references/manual/commands/pathinfo.md`
+- **PathList** - The PathList function returns a string containing a list of symbolic paths selected based on the matchStr parameter. - `references/manual/commands/pathlist.md`
+- **PauseForUser** - The PauseForUser operation pauses procedure function to allow the user to manually interact with a window. - `references/manual/commands/pauseforuser.md`
+- **PauseUpdate** - The PauseUpdate operation delays the updating of graphs and tables until you invoke a corresponding ResumeUpdate command. - `references/manual/commands/pauseupdate.md`
+- **PCA** - The PCA operation performs principal component analysis. Input data can be in the form of a list of 1D waves, a single 2D wave, or a string containing a list… - `references/manual/commands/pca.md`
+- **pcsr** - The pcsr function returns the point number of the point which the specified cursor (A through J) is on in the top (or named) graph. - `references/manual/commands/pcsr.md`
+- **Pi** - The Pi function returns π (3.141592...). - `references/manual/commands/pi.md`
+- **PICTInfo** - The PICTInfo function returns a string containing a semicolon-separated list of information about the named picture. - `references/manual/commands/pictinfo.md`
+- **PICTList** - The PICTList function returns a string containing a list of pictures based on matchStr and optionsStr parameters. - `references/manual/commands/pictlist.md`
+- **PixelFromAxisVal** - The PixelFromAxisVal function returns the local graph pixel coordinate corresponding to the axis value in the graph window or subwindow. - `references/manual/commands/pixelfromaxisval.md`
+- **PlayMovie** - The PlayMovie operation asks the operating system to open and play the specified movie. - `references/manual/commands/playmovie.md`
+- **PlayMovieAction** - The PlayMovieAction operation is used to extract frames from a movie file. - `references/manual/commands/playmovieaction.md`
+- **PlaySound** - The PlaySound operation plays the audio samples in the named wave. The various sound output parameters -- number of samples, sample rate, number of channels… - `references/manual/commands/playsound.md`
+- **pnt2x** - The pnt2x function returns the X value of the named wave at the point pointNum. The point number is truncated to an integer before use. - `references/manual/commands/pnt2x.md`
+- **poissonNoise** - The poissonNoise function returns a pseudo-random value from the Poisson distribution whose probability distribution function is. - `references/manual/commands/poissonnoise.md`
+- **poly** - The poly function returns the value of a polynomial function at x = x1. - `references/manual/commands/poly.md`
+- **poly2D** - The poly2D function returns the value of a 2D polynomial function at x = x1, y = y1. - `references/manual/commands/poly2d.md`
+- **PolygonArea** - The PolygonArea function returns the area of a simple, closed, convex or nonconvex planar polygon described by consecutive vertices in xWave and yWave. - `references/manual/commands/polygonarea.md`
+- **PolygonOp** - The PolygonOp operation performs operations on planar polygons. Polygons and polygon paths are represented by XY pairs of waves with NaNs separating closed… - `references/manual/commands/polygonop.md`
+- **PopupContextualMenu** - The PopupContextualMenu operation displays a pop-up menu. The menu appears at the current mouse position or at the location specified by the /C flag. - `references/manual/commands/popupcontextualmenu.md`
+- **PopupMenu** - The PopupMenu operation creates or modifies a pop-up menu control in the target or named window. - `references/manual/commands/popupmenu.md`
+- **PossiblyQuoteName** - The PossiblyQuoteName string function returns the input name string if it conforms to the rules of standard wave or Data Folder names. - `references/manual/commands/possiblyquotename.md`
+- **Preferences** - The Preferences operation sets or displays the state of user preferences. - `references/manual/commands/preferences.md`
+- **PrimeFactors** - PrimeFactors calculates the prime factors of inNumber. By default factors are printed in the history and are also stored in the wave W_PrimeFactors in the… - `references/manual/commands/primefactors.md`
+- **Print** - The Print operation prints the evaluated expressions in the history area. - `references/manual/commands/print.md`
+- **printf** - The printf operation prints formatted output to the history area. formatStr is a string which specifies the formatting of the output. - `references/manual/commands/printf.md`
+- **PrintGraphs** - The PrintGraphs operation prints one or more graphs. PrintGraphs prints one or more graphs on a single page from the command line or from a procedure. - `references/manual/commands/printgraphs.md`
+- **PrintLayout** - The PrintLayout operation prints the named page layout window. winName is the window name of the page layout to print. - `references/manual/commands/printlayout.md`
+- **PrintNotebook** - The PrintNotebook operation prints the named notebook window. notebookName is either kwTopWin for the top notebook window, the name of a notebook window or a… - `references/manual/commands/printnotebook.md`
+- **PrintSettings** - The PrintSettings operation gets or sets parameters associated with printing, such as a list of available printers or page setup information for a particular… - `references/manual/commands/printsettings.md`
+- **PrintTable** - The PrintTable operation prints the named table window. winName is the window name of the table to print. - `references/manual/commands/printtable.md`
+- **ProcedureText** - The ProcedureText function returns a string containing the text of the named macro or function as it exists in some procedure file, optionally with additional… - `references/manual/commands/proceduretext.md`
+- **ProcedureVersion** - The ProcedureVersion function returns the version number as specified by the first #pragma version=versionNum in the procedure file containing the named… - `references/manual/commands/procedureversion.md`
+- **Project** - The Project operation calculates projections of XY data, which most often are longitude and latitude waves of geographic coordinates. - `references/manual/commands/project.md`
+- **PulseStats** - The PulseStats operation produces simple statistics on a region of the named wave that is expected to contain three edges as shown below. - `references/manual/commands/pulsestats.md`
+- **PutScrapText** - The PutScrapText operation places textStr on the Clipboard (aka "scrap"). This text will be used when the user subsequently selects Paste from the Edit menu. - `references/manual/commands/putscraptext.md`
+- **pwd** - The pwd operation prints the full path of the current data folder to the history area. It is equivalent to Print GetDataFolder(1). - `references/manual/commands/pwd.md`
+- **Python** - The Python operation executes single Python statements from Igor. If the var or array keyword was used, Igor attempts to assign a Python object to an existing… - `references/manual/commands/python.md`
+- **PythonEnv** - The PythonEnv operation provides some basic environment management features for Python environments. - `references/manual/commands/pythonenv.md`
+- **PythonFile** - The PythonFile operation executes an entire.py file from top to bottom. - `references/manual/commands/pythonfile.md`

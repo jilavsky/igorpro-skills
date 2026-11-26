@@ -1,0 +1,269 @@
+# Igor Pro commands starting with S
+
+Each line: **Name** - one-line summary - local page to read with read_file for full syntax, flags, outputs, examples.
+
+- **s** - The s function returns the current chunk index of the destination wave when used in a multidimensional wave assignment statement. - `references/manual/commands/s.md`
+- **Save** - The Save operation saves the named waves on disk as text (/F, /G or /J) or as Igor binary. - `references/manual/commands/save.md`
+- **SaveData** - The SaveData operation writes data from the current data folder of the current experiment to a packed experiment file on disk or to a file system folder. - `references/manual/commands/savedata.md`
+- **SaveExperiment** - The SaveExperiment operation saves the current experiment. SaveExperiment overwrites any previously-existing file named fileName. - `references/manual/commands/saveexperiment.md`
+- **SaveGizmoCopy** - The SaveGizmoCopy operation saves a Gizmo window and its waves in an Igor packed experiment file. - `references/manual/commands/savegizmocopy.md`
+- **SaveGraphCopy** - The SaveGraphCopy operation saves a graph and its waves in an Igor packed experiment file. - `references/manual/commands/savegraphcopy.md`
+- **SaveNotebook** - The SaveNotebook operation saves the named notebook. notebookName is either kwTopWin for the top notebook window, the name of a notebook window or a… - `references/manual/commands/savenotebook.md`
+- **SavePackagePreferences** - The SavePackagePreferences operation saves preference data in the specified structure so that it can be accessed later via the LoadPackagePreferences operation. - `references/manual/commands/savepackagepreferences.md`
+- **SavePICT** - The SavePICT operation creates a picture file representing the top graph, table or layout. - `references/manual/commands/savepict.md`
+- **SaveTableCopy** - The SaveTableCopy operation saves a copy of the data displayed in a table on disk. - `references/manual/commands/savetablecopy.md`
+- **sawtooth** - The sawtooth function returns ((num +n2π) mod 2π)/2π where n is used to correct if num is negative. - `references/manual/commands/sawtooth.md`
+- **Say** - The Say operation speaks the text in sayThisStr with the default voice and speech settings, unless the speech settings are modified by the flags and parameters. - `references/manual/commands/say.md`
+- **ScaleToIndex** - The ScaleToIndex function returns the number of the element in the requested dimension whose scaled index value is closest to coordValue. - `references/manual/commands/scaletoindex.md`
+- **ScreenResolution** - The ScreenResolution function returns the logical resolution of your video display screen in dots per inch (dpi). - `references/manual/commands/screenresolution.md`
+- **sec** - The sec function returns the secant of angle which is in radians: $$ \displaystyle \sec (x)=\frac{1}{\cos (x)}. $$. - `references/manual/commands/sec.md`
+- **sech** - The sech function returns the hyperbolic secant of x. $$ \displaystyle \operatorname{csch}(x)=\frac{1}{\cosh (x)}=\frac{2}{e^{x}+e^{-x}}. - `references/manual/commands/sech.md`
+- **Secs2Date** - The Secs2Date function returns a string containing a date. With format values 0, 1, and 2, the formatting of dates depends on operating system settings… - `references/manual/commands/secs2date.md`
+- **Secs2Time** - The Secs2Time function returns a string containing a time. seconds is the number of seconds from 1/1/1904 to the time to be returned. - `references/manual/commands/secs2time.md`
+- **SelectNumber** - The SelectNumber function returns one of val1, val2, or (optionally) val3 based on the value of whichOne. - `references/manual/commands/selectnumber.md`
+- **SelectString** - The SelectString function returns one of str1, str2, or (optionally) str3 based on the value of whichOne. - `references/manual/commands/selectstring.md`
+- **SetActiveSubwindow** - The SetActiveSubwindow operation specifies the subwindow that is to be activated. This operation is mainly for use by recreation macros. - `references/manual/commands/setactivesubwindow.md`
+- **SetAxis** - The SetAxis operation sets the extent (or "range") of the named axis. axisName is usually "left", "right", "top", or "bottom", but it can also be the name of… - `references/manual/commands/setaxis.md`
+- **SetBackground** - The SetBackground operation sets numericExpression as the current unnamed background task. - `references/manual/commands/setbackground.md`
+- **SetDashPattern** - The SetDashPattern operation defines a dashed-line pattern for a user-defined dashed line. - `references/manual/commands/setdashpattern.md`
+- **SetDataFolder** - The SetDataFolder operation sets the current data folder to the specified data folder. - `references/manual/commands/setdatafolder.md`
+- **SetDimLabel** - The SetDimLabel operation sets the dimension label or dimension element label to the specified label. - `references/manual/commands/setdimlabel.md`
+- **SetDrawEnv** - The SetDrawEnv operation sets properties of the drawing environment. If one or more draw objects are selected in the top window then the SetDrawEnv command… - `references/manual/commands/setdrawenv.md`
+- **SetDrawLayer** - The SetDrawLayer operation makes all future drawing operations use the named layer. - `references/manual/commands/setdrawlayer.md`
+- **SetEnvironmentVariable** - The SetEnvironmentVariable function creates an environment variable in Igor's process and sets its value to varValue. - `references/manual/commands/setenvironmentvariable.md`
+- **SetFileFolderInfo** - The SetFileFolderInfo operation changes a file's or folder's properties. - `references/manual/commands/setfilefolderinfo.md`
+- **SetFormula** - The SetFormula operation binds the named wave, numeric or string variable to the expression or, if the expression is "", unbinds it from any previous… - `references/manual/commands/setformula.md`
+- **SetIdlePeriod** - The SetIdlePeriod operation changes and reports the period of Igor's main idle loop. The units of period are milliseconds. - `references/manual/commands/setidleperiod.md`
+- **SetIgorHook** - The SetIgorHook operation tells Igor to call a user-defined "hook" function at the following times. - `references/manual/commands/setigorhook.md`
+- **SetIgorMenuMode** - The SetIgorMenuMode operation allows an Igor programmer to disable or enable Igor's built-in menus and menu items. - `references/manual/commands/setigormenumode.md`
+- **SetIgorOption** - The SetIgorOption operation makes temporary changes to Igor Pro's behavior. - `references/manual/commands/setigoroption.md`
+- **SetMarquee** - The SetMarquee operation creates a marquee on the target graph or layout window or the specified window or subwindow. - `references/manual/commands/setmarquee.md`
+- **SetProcessSleep** - The SetProcessSleep operation is obsolete and does nothing as of Igor Pro 7.00. - `references/manual/commands/setprocesssleep.md`
+- **SetRandomSeed** - The SetRandomSeed operation seeds the random number generator used for the noise functions listed under Noise Functions. - `references/manual/commands/setrandomseed.md`
+- **SetScale** - SetScale d, num1, num2 [, unitsStr ], waveName [, waveName]... The SetScale operation sets the dimension scaling or the data full scale for the named waves. - `references/manual/commands/setscale.md`
+- **SetVariable** - The SetVariable operation creates or modifies a SetVariable control in the target window. - `references/manual/commands/setvariable.md`
+- **SetWaveLock** - The SetWaveLock operation locks a wave or waves and protects them against modification. - `references/manual/commands/setwavelock.md`
+- **SetWaveTextEncoding** - The SetWaveTextEncoding operation changes the text encoding of the specified waves and/or the text encoding of all waves in the specified data folder. - `references/manual/commands/setwavetextencoding.md`
+- **SetWindow** - The SetWindow operation sets the window note and user data for the named window or subwindow. - `references/manual/commands/setwindow.md`
+- **ShowIgorMenus** - The ShowIgorMenus operation shows the named built-in menus or, if none are explicitly named, shows all built-in menus in the menu bar. - `references/manual/commands/showigormenus.md`
+- **ShowInfo** - The ShowInfo operation puts an information panel on the target or named graph. - `references/manual/commands/showinfo.md`
+- **ShowTools** - The ShowTools operation puts a tool palette for drawing along the left hand side of the target or named graph or control panel, and optionally activates the… - `references/manual/commands/showtools.md`
+- **sign** - The sign function returns -1 if num is negative or 1 if it is not negative. - `references/manual/commands/sign.md`
+- **Silent** - The Silent operation is largely obsolete. Only very obscure uses remain and most users can ignore this operation. - `references/manual/commands/silent.md`
+- **sin** - The sin function returns the sine of angle which is in radians. In complex expressions, angle is complex, and sin(angle) returns a complex value. - `references/manual/commands/sin.md`
+- **sinc** - The sinc function returns sin(num)/num. The sinc function returns 1.0 when num is zero. num must be real. - `references/manual/commands/sinc.md`
+- **sinh** - The sinh function returns the hyperbolic sine of num: $$ \displaystyle \sinh (x)=\frac{e^{x}-e^{-x}}{2}. $$. - `references/manual/commands/sinh.md`
+- **SinIntegral** - The SinIntegral(z) function returns the sine integral of z. If z is real, a real value is returned. If z is complex then a complex value is returned. - `references/manual/commands/sinintegral.md`
+- **Sleep** - The Sleep operation puts Igor to sleep for a while. After the while is up, Igor continues execution. - `references/manual/commands/sleep.md`
+- **Slider** - The Slider operation creates or modifies a Slider control in the target window. - `references/manual/commands/slider.md`
+- **Slow** - The Slow operation is obsolete. Prior to Igor Pro 7 it slowed down execution of macros for debugging purposes. It now does nothing. - `references/manual/commands/slow.md`
+- **Smooth** - The Smooth operation smooths the named waves using binomial (Gaussian) smoothing, boxcar (sliding average) smoothing, Savitzky-Golay (polynomial) smoothing… - `references/manual/commands/smooth.md`
+- **SmoothCustom** - SmoothCustom is obsolete. Use the FilterFIR operation instead. For multidimensional applications use the MatrixConvolve or MatrixFilter operations. - `references/manual/commands/smoothcustom.md`
+- **Sort** - The Sort operation sorts the sortedWaveNames by rearranging their data values to put the data values of sortKeyWaves in order. - `references/manual/commands/sort.md`
+- **SortColumns** - The SortColumns operation rearranges data in columns of the sortWaves using the data movements that would sort the values of the keyWaves if they were sorted. - `references/manual/commands/sortcolumns.md`
+- **SortList** - The SortList function returns listStr after sorting it according to the default or listSepStr and options parameters. - `references/manual/commands/sortlist.md`
+- **SoundInRecord** - The SoundInRecord operation records audio input at the sample rate obtained from the wave's X scaling and for the number of points determined by the length of… - `references/manual/commands/soundinrecord.md`
+- **SoundInSet** - SoundInSet is used to setup the input device for recording. SoundInSet can accept multiple keyword =value parameters on one line. - `references/manual/commands/soundinset.md`
+- **SoundInStartChart** - Starts audio data acquisition into the given FIFO. buffersize is the number of bytes to allocate for the interrupt time buffer which then feeds into the given… - `references/manual/commands/soundinstartchart.md`
+- **SoundInStatus** - The SoundInStatus operation creates and sets a set of variables and strings with information about the current sound input device. - `references/manual/commands/soundinstatus.md`
+- **SoundInStopChart** - Stops audio data acquisition started by SoundInStartChart. This operation requires a computer equipped with sound input hardware. - `references/manual/commands/soundinstopchart.md`
+- **SoundLoadWave** - The SoundLoadWave operation loads sound data from the named file into a wave. Mono, stereo, surround-sound, and high-resolution sound formats are supported. - `references/manual/commands/soundloadwave.md`
+- **SoundSaveWave** - The SoundSaveWave operation saves the named wave on disk primarily as a Microsoft WAVE sound file, or infrequently as an Audio Interchange File Format (AIFF-C). - `references/manual/commands/soundsavewave.md`
+- **SpecialCharacterInfo** - The SpecialCharacterInfo function returns a string containing information about the named special character in the named notebook window. - `references/manual/commands/specialcharacterinfo.md`
+- **SpecialCharacterList** - The SpecialCharacterList function returns a string containing a list of names of special characters in a formatted text notebook. - `references/manual/commands/specialcharacterlist.md`
+- **SpecialDirPath** - The SpecialDirPath function returns a full path to a file system directory specified by dirIDStr and domain. - `references/manual/commands/specialdirpath.md`
+- **sphericalBessJ** - The sphericalBessJ function returns the spherical Bessel function of the first kind and order n. - `references/manual/commands/sphericalbessj.md`
+- **sphericalBessJD** - The sphericalBessJD function returns the derivative of the spherical Bessel function of the first kind and order n. - `references/manual/commands/sphericalbessjd.md`
+- **sphericalBessY** - The sphericalBessY function returns the spherical Bessel function of the second kind and order n. - `references/manual/commands/sphericalbessy.md`
+- **sphericalBessYD** - The sphericalBessYD function returns the derivative of the spherical Bessel function of the second kind and order n. - `references/manual/commands/sphericalbessyd.md`
+- **sphericalHarmonics** - The sphericalHarmonics function returns the complex-valued spherical harmonics. - `references/manual/commands/sphericalharmonics.md`
+- **SphericalInterpolate** - The SphericalInterpolate operation works in conjunction with the SphericalTriangulate operation to calculate interpolated values on a surface of a sphere. - `references/manual/commands/sphericalinterpolate.md`
+- **SphericalTriangulate** - The SphericalTriangulate operation triangulates an arbitrary x, y, z triplet wave on a surface of a sphere. - `references/manual/commands/sphericaltriangulate.md`
+- **SplitString** - The SplitString operation uses the regular expression regExprStr,to split str,into subpatterns. See Subpatterns for details. - `references/manual/commands/splitstring.md`
+- **SplitWave** - The SplitWave operation creates new waves containing subsets of the data in srcWave which must be 2D or greater. - `references/manual/commands/splitwave.md`
+- **sprintf** - The sprintf operation is the same as printf, except it prints the formatted output to the string variable stringName rather than to the history area. - `references/manual/commands/sprintf.md`
+- **sqrt** - The sqrt function returns the square root of num or NaN if num is negative. - `references/manual/commands/sqrt.md`
+- **sscanf** - The sscanf operation is useful for parsing text that contains numeric or string data. - `references/manual/commands/sscanf.md`
+- **Stack** - The Stack operation stacks the named objects in the top page layout. objectName is the name of a graph, table, picture or annotation object in the top page… - `references/manual/commands/stack.md`
+- **StackWindows** - The StackWindows operation stacks the named windows on the desktop. TileWindows for details on the flags and parameters. - `references/manual/commands/stackwindows.md`
+- **StartMSTimer** - The StartMSTimer function creates a new microsecond timer and returns a timer reference number. - `references/manual/commands/startmstimer.md`
+- **StatsAngularDistanceTest** - The StatsAngularDistanceTest operation performs nonparametric tests on the angular distance between sample data and reference directions for two or more… - `references/manual/commands/statsangulardistancetest.md`
+- **StatsANOVA1Test** - The StatsANOVA1Test operation performs a one-way ANOVA test (fixed-effect model). - `references/manual/commands/statsanova1test.md`
+- **StatsANOVA2NRTest** - The StatsANOVA2NRTest operation performs a two-factor analysis of variance (ANOVA) on the data that has no replication where there is only a single datum for… - `references/manual/commands/statsanova2nrtest.md`
+- **StatsANOVA2RMTest** - The StatsANOVA2RMTest operation performs analysis of variance (ANOVA) on srcWave where replicates consist of multiple measurements on the same subject… - `references/manual/commands/statsanova2rmtest.md`
+- **StatsANOVA2Test** - The StatsANOVA2Test operation performs a two-factor analysis of variance (ANOVA) on srcWave. - `references/manual/commands/statsanova2test.md`
+- **StatsBetaCDF** - The StatsBetaCDF function returns the beta cumulative distribution function. - `references/manual/commands/statsbetacdf.md`
+- **StatsBetaPDF** - Returns the beta probability distribution function (PDF) given by $$ \displaystyle F(x;p,q,a,b)=\frac{({x - a})^{p - 1}(b-x)^{q-1}}{B(p, q)(b-a)^{p+q-1}}… - `references/manual/commands/statsbetapdf.md`
+- **StatsBinomialCDF** - The StatsBinomialCDF function returns the binomial cumulative distribution function. - `references/manual/commands/statsbinomialcdf.md`
+- **StatsBinomialPDF** - The StatsBinomialPDF function returns the binomial probability distribution function. - `references/manual/commands/statsbinomialpdf.md`
+- **StatsCauchyCDF** - The StatsCauchyCDF function returns the Cauchy-Lorentz cumulative distribution function. - `references/manual/commands/statscauchycdf.md`
+- **StatsCauchyPDF** - The StatsCauchyPDF function returns the Cauchy-Lorentz probability distribution function. - `references/manual/commands/statscauchypdf.md`
+- **StatsChiCDF** - The StatsChiCDF function returns the chi-squared cumulative distribution function for the specified value and degrees of freedom n. - `references/manual/commands/statschicdf.md`
+- **StatsChiPDF** - The StatsChiPDF function returns the chi-squared probability distribution function for the specified value and degrees of freedom as. - `references/manual/commands/statschipdf.md`
+- **StatsChiTest** - The StatsChiTest operation computes a $$ \displaystyle \chi^{2} $$ statistic for comparing two distributions or a $$ \displaystyle \chi^{2} $$ statistic for… - `references/manual/commands/statschitest.md`
+- **StatsCircularCorrelationTest** - The StatsCircularTwoSampleTest operation peforms a number of tests for two samples of circular data. - `references/manual/commands/statscircularcorrelationtest.md`
+- **StatsCircularMeans** - The StatsCircularMeans operation calculates the mean of a number of circular means, returning the mean angle (grand mean), the length of the mean vector, and… - `references/manual/commands/statscircularmeans.md`
+- **StatsCircularMoments** - The StatsCircularMoments operation computes circular statistical moments and optionally performs angular uniformity tests for the data in srcWave. - `references/manual/commands/statscircularmoments.md`
+- **StatsCircularTwoSampleTest** - The StatsCircularTwoSampleTest operation performs second order analysis of angles. - `references/manual/commands/statscirculartwosampletest.md`
+- **StatsCMSSDCDF** - The StatsCMSSDCDF function returns the cumulative distribution function of the C distribution (mean square successive difference), which is. - `references/manual/commands/statscmssdcdf.md`
+- **StatsCochranTest** - The StatsCochranTest operation performs Cochran's (Q) test on a randomized block or repeated measures dichotomous data. - `references/manual/commands/statscochrantest.md`
+- **StatsContingencyTable** - The StatsContingencyTable operation performs contingency table analysis on 2D and 3D tables. - `references/manual/commands/statscontingencytable.md`
+- **StatsCorrelation** - The StatsCorrelation function computes Pearson's correlation coefficient between two real valued arrays of data of the same length. - `references/manual/commands/statscorrelation.md`
+- **StatsDExpCDF** - The StatsDExpCDF function returns the double-exponential cumulative distribution function. - `references/manual/commands/statsdexpcdf.md`
+- **StatsDExpPdf** - The StatsDExpPdf function returns the double-exponential probability distribution function. - `references/manual/commands/statsdexppdf.md`
+- **StatsDIPTest** - The StatsDIPTest operation performs Hartigan test for unimodality. The input to the operation srcWave is any real numeric wave. - `references/manual/commands/statsdiptest.md`
+- **StatsDunnettTest** - The StatsDunnettTest operation performs the Dunnett test by comparing multiple groups to a control group. - `references/manual/commands/statsdunnetttest.md`
+- **StatsErlangCDF** - Returns the Erlang cumulative distribution function (CDF) given by $$ F(x; b, c)=1-\frac{\displaystyle \Gamma\left(c, \frac{x}{b}\right)}{\Gamma(c)}. - `references/manual/commands/statserlangcdf.md`
+- **StatsErlangPDF** - Returns the Erlang probability distribution function (PDF) given by $$ f(x; b, c)=\frac{\displaystyle \left(\frac{x}{b}\right)^{c-1} \exp… - `references/manual/commands/statserlangpdf.md`
+- **StatsErrorPDF** - Returns the error probability distribution function (PDF) also known as the exponential power distribution. It is given by. - `references/manual/commands/statserrorpdf.md`
+- **StatsEValueCDF** - The StatsEValueCDF function returns the extreme-value (type I, Gumbel) cumulative distribution function. - `references/manual/commands/statsevaluecdf.md`
+- **StatsEValuePDF** - The StatsEValuePDF function returns the extreme-value (type I, Gumbel) probability distribution function. - `references/manual/commands/statsevaluepdf.md`
+- **StatsExpCDF** - The StatsExpCDF function returns the exponential cumulative distribution function. - `references/manual/commands/statsexpcdf.md`
+- **StatsExpPDF** - The StatsExpPDF function returns the exponential probability distribution function. - `references/manual/commands/statsexppdf.md`
+- **StatsFCDF** - The StatsFCDF function returns the cumulative distribution function for the F distribution with shape parameters n1 and n2. - `references/manual/commands/statsfcdf.md`
+- **StatsFPDF** - The StatsFPDF function returns the probability distribution function for the F distribution with shape parameters n1 and n2. - `references/manual/commands/statsfpdf.md`
+- **StatsFriedmanCDF** - The StatsFriedmanCDF function returns the cumulative probability distribution of the Friedman distribution with m rows and n columns. - `references/manual/commands/statsfriedmancdf.md`
+- **StatsFriedmanTest** - The StatsFriedmanTest operation performs Friedman's test on a randomized block of data. - `references/manual/commands/statsfriedmantest.md`
+- **StatsFTest** - The StatsFTest operation performs the F-test on the two distributions in wave1 and wave2, which can be any real numeric type, must contain at least two data… - `references/manual/commands/statsftest.md`
+- **StatsGammaCDF** - Returns the gamma cumulative distribution function (CDF) given by $$ \displaystyle F(x; \mu, \sigma, \gamma)=\frac{\Gamma_{\text {inc }}\left(\gamma… - `references/manual/commands/statsgammacdf.md`
+- **StatsGammaPDF** - Returns the gamma probability distribution function (PDF) given by $$ f(x; \mu, \sigma, \gamma)=\frac{\displaystyle… - `references/manual/commands/statsgammapdf.md`
+- **StatsGeometricCDF** - The StatsGeometricCDF function returns the geometric cumulative distribution function. - `references/manual/commands/statsgeometriccdf.md`
+- **StatsGeometricPDF** - The StatsGeometricPDF function returns the geometric probability distribution function. - `references/manual/commands/statsgeometricpdf.md`
+- **StatsGEVCDF** - The StatsGEVCDF function returns the generalized extreme value cumulative distribution function. - `references/manual/commands/statsgevcdf.md`
+- **StatsGEVPDF** - The StatsGEVPDF function returns the generalized extreme value probability distribution function. - `references/manual/commands/statsgevpdf.md`
+- **StatsHodgesAjneTest** - The StatsHodgesAjneTest operation performs the Hodges-Ajne nonparametric test for uniform distribution around a circle. - `references/manual/commands/statshodgesajnetest.md`
+- **StatsHyperGCDF** - The StatsHyperGCDF function returns the hypergeometric cumulative distribution function, which is the probability of getting x marked items when drawing… - `references/manual/commands/statshypergcdf.md`
+- **StatsHyperGPDF** - The StatsHyperGPDF function returns the hypergeometric probability distribution function, which is the probability of getting x marked items when drawing… - `references/manual/commands/statshypergpdf.md`
+- **StatsInvBetaCDF** - The StatsInvBetaCDF function returns the inverse of the beta cumulative distribution function. - `references/manual/commands/statsinvbetacdf.md`
+- **StatsInvBinomialCDF** - The StatsInvBinomialCDF function returns the inverse of the binomial cumulative distribution function. - `references/manual/commands/statsinvbinomialcdf.md`
+- **StatsInvCauchyCDF** - The StatsInvCauchyCDF function returns the inverse of the Cauchy-Lorentz cumulative distribution function. - `references/manual/commands/statsinvcauchycdf.md`
+- **StatsInvChiCDF** - The StatsInvChiCDF function returns the inverse of the chi-squared distribution of x and shape parameter n. - `references/manual/commands/statsinvchicdf.md`
+- **StatsInvCMSSDCDF** - The StatsInvCMSSDCDF function returns the critical values of the C distribution (mean square successive difference distribution), which is given by. - `references/manual/commands/statsinvcmssdcdf.md`
+- **StatsInvDExpCDF** - The StatsInvDExpCDF function returns the inverse of the double-exponential cumulative distribution function. - `references/manual/commands/statsinvdexpcdf.md`
+- **StatsInvEValueCDF** - The StatsInvEValueCDF function returns the inverse of the extreme-value (type I, Gumbel) cumulative distribution function. - `references/manual/commands/statsinvevaluecdf.md`
+- **StatsInvExpCDF** - The StatsInvExpCDF function returns the inverse of the exponential cumulative distribution function. - `references/manual/commands/statsinvexpcdf.md`
+- **StatsInvFCDF** - The StatsInvFCDF function returns the inverse of the F distribution CDF for x and shape parameters n1 and n2. - `references/manual/commands/statsinvfcdf.md`
+- **StatsInvFriedmanCDF** - The StatsInvFriedmanCDF function returns the inverse of the Friedman distribution cumulative distribution function of cdf with m rows and n columns. - `references/manual/commands/statsinvfriedmancdf.md`
+- **StatsInvGammaCDF** - Returns the inverse of the gamma cumulative distribution function (CDF). - `references/manual/commands/statsinvgammacdf.md`
+- **StatsInvGeometricCDF** - The StatsInvGeometricCDF function returns the inverse of the geometric cumulative distribution function. - `references/manual/commands/statsinvgeometriccdf.md`
+- **StatsInvKuiperCDF** - The StatsInvKuiperCDF function returns the inverse of Kuiper cumulative distribution function. - `references/manual/commands/statsinvkuipercdf.md`
+- **StatsInvLogisticCDF** - The StatsInvLogisticCDF function returns the inverse of the logistic cumulative distribution function. - `references/manual/commands/statsinvlogisticcdf.md`
+- **StatsInvLogNormalCDF** - The StatsInvLogNormalCDF function returns the numerically evaluated inverse of the lognormal cumulative distribution function. - `references/manual/commands/statsinvlognormalcdf.md`
+- **StatsInvMaxwellCDF** - The StatsInvMaxwellCDF function returns the evaluated numerically inverse of the Maxwell cumulative distribution function. - `references/manual/commands/statsinvmaxwellcdf.md`
+- **StatsInvMooreCDF** - The StatsInvMooreCDF function returns the inverse cumulative distribution function for Moore's R*, which is used as a critical value in nonparametric version… - `references/manual/commands/statsinvmoorecdf.md`
+- **StatsInvNBinomialCDF** - The StatsInvNBinomialCDF function returns the numerically evaluated inverse of the negative binomial cumulative distribution function. - `references/manual/commands/statsinvnbinomialcdf.md`
+- **StatsInvNCChiCDF** - The StatsInvNCChiCDF function returns the inverse of the noncenteral chi-squared cumulative distribution function. - `references/manual/commands/statsinvncchicdf.md`
+- **StatsInvNCFCDF** - The StatsInvNCFCDF function returns the numerically evaluated inverse of the cumulative distribution function of the noncentral F distribution. - `references/manual/commands/statsinvncfcdf.md`
+- **StatsInvNormalCDF** - The StatsInvNormalCDF function returns the numerically computed inverse of the normal cumulative distribution function. There is no closed form expression. - `references/manual/commands/statsinvnormalcdf.md`
+- **StatsInvParetoCDF** - The StatsInvParetoCDF function returns the inverse of the Pareto cumulative distribution function. - `references/manual/commands/statsinvparetocdf.md`
+- **StatsInvPoissonCDF** - The StatsInvPoissonCDF function returns the numerically evaluated inverse of the Poisson cumulative distribution function. - `references/manual/commands/statsinvpoissoncdf.md`
+- **StatsInvPowerCDF** - The StatsInvPowerCDF function returns the inverse of the Power Function cumulative distribution function. - `references/manual/commands/statsinvpowercdf.md`
+- **StatsInvQCDF** - The StatsInvQCDF function returns the critical value of the Q cumulative distribution function for r the number of groups, c the number of treatments, and df… - `references/manual/commands/statsinvqcdf.md`
+- **StatsInvQpCDF** - The StatsInvQpCDF function returns the critical value of the Q' cumulative distribution function for ng the number of groups, nt the number of treatments, and… - `references/manual/commands/statsinvqpcdf.md`
+- **StatsInvRayleighCDF** - Returns the inverse of the Rayleigh cumulative distribution function (CDF) given by. - `references/manual/commands/statsinvrayleighcdf.md`
+- **StatsInvRectangularCDF** - The StatsInvRectangularCDF function returns the inverse of the rectangular (uniform) cumulative distribution function. - `references/manual/commands/statsinvrectangularcdf.md`
+- **StatsInvSpearmanCDF** - The StatsInvSpearmanCDF function returns the inverse cumulative distribution function for Spearman's ρ, which is used as a critical value in rank correlation… - `references/manual/commands/statsinvspearmancdf.md`
+- **StatsInvStudentCDF** - The StatsInvStudentCDF function returns the numerically evaluated inverse of Student cumulative distribution function. There is no closed form expression. - `references/manual/commands/statsinvstudentcdf.md`
+- **StatsInvTopDownCDF** - The StatsInvTopDownCDF function returns the inverse cumulative distribution function for the top-down distribution. - `references/manual/commands/statsinvtopdowncdf.md`
+- **StatsInvTriangularCDF** - The StatsInvTriangularCDF function returns the inverse of the triangular cumulative distribution function. - `references/manual/commands/statsinvtriangularcdf.md`
+- **StatsInvUSquaredCDF** - The StatsInvUSquaredCDF function returns the inverse of Watson's U2 cumulative distribution function integer sample sizes n and m. - `references/manual/commands/statsinvusquaredcdf.md`
+- **StatsInvVonMisesCDF** - The StatsInvVonMisesCDF function returns the numerically evaluated inverse of the von Mises cumulative distribution function where the value of the integral… - `references/manual/commands/statsinvvonmisescdf.md`
+- **StatsInvWeibullCDF** - The StatsInvWeibullCDF function returns the inverse of the Weibull cumulative distribution function. - `references/manual/commands/statsinvweibullcdf.md`
+- **StatsJBTest** - The StatsJBTest operation performs the Jarque-Bera test on srcWave. Output is to the W_JBResults wave in the current data folder. - `references/manual/commands/statsjbtest.md`
+- **StatsKDE** - StatsKDE can be used to estimate a PDF from original data distribution. - `references/manual/commands/statskde.md`
+- **StatsKendallTauTest** - The StatsKendallTauTest operation performs the nonparametric Mann-Kendall test, which computes a correlation coefficient τ (similar to Spearman's correlation)… - `references/manual/commands/statskendalltautest.md`
+- **StatsKSTest** - The StatsKSTest operation performs the Kolmogorov-Smirnov (KS) goodness-of-fit test for two continuous distributions. - `references/manual/commands/statskstest.md`
+- **StatsKuiperCDF** - The StatsKuiperCDF function returns the Kuiper cumulative distribution function. - `references/manual/commands/statskuipercdf.md`
+- **StatsKWTest** - The StatsKWTest operation performs the nonparametric Kruskal-Wallis test which tests variances using the ranks of the data. - `references/manual/commands/statskwtest.md`
+- **StatsLinearCorrelationTest** - The StatsLinearCorrelationTest operation performs correlation tests on waveA and waveB, which must be real valued numeric waves and must have the same number… - `references/manual/commands/statslinearcorrelationtest.md`
+- **StatsLinearRegression** - The StatsLinearRegression operation performs regression analysis on the input wave(s). - `references/manual/commands/statslinearregression.md`
+- **StatsLogisticCDF** - The StatsLogisticCDF function returns the logistic cumulative distribution function. - `references/manual/commands/statslogisticcdf.md`
+- **StatsLogisticPDF** - The StatsLogisticPDF function returns the logistic probability distribution function. - `references/manual/commands/statslogisticpdf.md`
+- **StatsLogNormalCDF** - The StatsLogNormalCDF function returns the lognormal cumulative distribution function. - `references/manual/commands/statslognormalcdf.md`
+- **StatsLogNormalPDF** - The StatsLogNormalPDF function returns the lognormal probability distribution function. - `references/manual/commands/statslognormalpdf.md`
+- **StatsMaxwellCDF** - The StatsMaxwellCDF function returns the Maxwell cumulative distribution function. - `references/manual/commands/statsmaxwellcdf.md`
+- **StatsMaxwellPDF** - The StatsMaxwellPDF function returns Maxwell's probability distribution function. - `references/manual/commands/statsmaxwellpdf.md`
+- **StatsMedian** - The StatsMedian function returns the median value of a numeric wave waveName, which must not contain NaNs. - `references/manual/commands/statsmedian.md`
+- **StatsMooreCDF** - The StatsMooreCDF function returns the cumulative distribution function for Moore's R*, which is used in a nonparametric version of the Rayleigh test for… - `references/manual/commands/statsmoorecdf.md`
+- **StatsMultiCorrelationTest** - The StatsMultiCorrelationTest operation performs various tests on multiple correlation coefficients. - `references/manual/commands/statsmulticorrelationtest.md`
+- **StatsNBinomialCDF** - The StatsNBinomialCDF function returns the negative binomial cumulative distribution function. - `references/manual/commands/statsnbinomialcdf.md`
+- **StatsNBinomialPDF** - The StatsNBinomialPDF function returns the negative binomial probability distribution function. - `references/manual/commands/statsnbinomialpdf.md`
+- **StatsNCChiCDF** - The StatsNCChiCDF function returns the noncentral chi-squared cumulative distribution function. - `references/manual/commands/statsncchicdf.md`
+- **StatsNCChiPDF** - The StatsNCChiPDF function returns the noncentral chi-squared probability distribution function. - `references/manual/commands/statsncchipdf.md`
+- **StatsNCFCDF** - The StatsNCFCDF function returns the cumulative distribution function of the noncentral F distribution. - `references/manual/commands/statsncfcdf.md`
+- **StatsNCFPDF** - The StatsNCFPDF function returns the probability distribution function of the noncentral F distribution. - `references/manual/commands/statsncfpdf.md`
+- **StatsNCTCDF** - The StatsNCTCDF function returns the cumulative distribution function of the noncentral Student-T distribution. - `references/manual/commands/statsnctcdf.md`
+- **StatsNCTPDF** - The StatsNCTPDF function returns the probability distribution function of the noncentral Student-T distribution. - `references/manual/commands/statsnctpdf.md`
+- **StatsNormalCDF** - The StatsNormalCDF function returns the normal cumulative distribution function. - `references/manual/commands/statsnormalcdf.md`
+- **StatsNormalPDF** - The StatsNormalPDF function returns the normal probability distribution function. - `references/manual/commands/statsnormalpdf.md`
+- **StatsNPMCTest** - The StatsNPMCTest operation performs a number of nonparametric multiple comparison tests. - `references/manual/commands/statsnpmctest.md`
+- **StatsNPNominalSRTest** - The StatsNPNominalSRTest operation performs a nonparametric serial randomness test for nominal data consisting of two types. - `references/manual/commands/statsnpnominalsrtest.md`
+- **StatsParetoCDF** - The StatsParetoCDF function returns the Pareto cumulative distribution function. - `references/manual/commands/statsparetocdf.md`
+- **StatsParetoPDF** - The StatsParetoPDF function returns the Pareto probability distribution function. - `references/manual/commands/statsparetopdf.md`
+- **StatsPermute** - The StatsPermute function permutes elements in waveA based on the lexicographic order of waveB and the direction dir. - `references/manual/commands/statspermute.md`
+- **StatsPoissonCDF** - The StatsPoissonCDF function returns the Poisson cumulative distribution function. - `references/manual/commands/statspoissoncdf.md`
+- **StatsPoissonPDF** - The StatsPoissonPDF function returns the Poisson probability distribution function. - `references/manual/commands/statspoissonpdf.md`
+- **StatsPowerCDF** - The StatsPowerCDF function returns the Power Function cumulative distribution function. - `references/manual/commands/statspowercdf.md`
+- **StatsPowerNoise** - The StatsPowerNoise function returns a pseudorandom value from the power distribution function with probability distribution. - `references/manual/commands/statspowernoise.md`
+- **StatsPowerPDF** - The StatsPowerPDF function returns the Power Function probability distribution function. - `references/manual/commands/statspowerpdf.md`
+- **StatsQCDF** - The StatsQCDF function returns the value of the Q cumulative distribution function for r the number of groups, c the number of treatments, and df the error… - `references/manual/commands/statsqcdf.md`
+- **StatsQpCDF** - The StatsQpCDF function returns the Q' cumulative distribution function associated with Dunnett's test. - `references/manual/commands/statsqpcdf.md`
+- **StatsQuantiles** - The StatsQuantiles operation computes quantiles and elementary univariate statistics for a set of data in srcWave. - `references/manual/commands/statsquantiles.md`
+- **StatsRankCorrelationTest** - The StatsRankCorrelationTest operation performs Spearman's rank correlation test on waveA and waveB, 1D waves containing the same number of points. - `references/manual/commands/statsrankcorrelationtest.md`
+- **StatsRayleighCDF** - The StatsRayleighCDF function returns the Rayleigh cumulative distribution function. - `references/manual/commands/statsrayleighcdf.md`
+- **StatsRayleighPDF** - The StatsRayleighPDF function returns the Rayleigh probability distribution function. - `references/manual/commands/statsrayleighpdf.md`
+- **StatsRectangularCDF** - The StatsRectangularCDF function returns the rectangular (uniform) cumulative distribution function. - `references/manual/commands/statsrectangularcdf.md`
+- **StatsRectangularPDF** - The StatsRectangularPDF function returns the rectangular (uniform) probability distribution function. - `references/manual/commands/statsrectangularpdf.md`
+- **StatsResample** - The StatsResample operation resamples srcWave by drawing (with replacement) numPoints values from srcWave and storing them in the output wave W_Resampled or… - `references/manual/commands/statsresample.md`
+- **StatsRunsCDF** - The StatsRunsCDF function returns the cumulative distribution function for the up and down runs distribution for total number of runs r in a random linear… - `references/manual/commands/statsrunscdf.md`
+- **StatsSample** - StatsSample creates a random, non-repeating sample from srcWave. It samples srcWave by drawing without replacement numPoints values from srcWave and storing… - `references/manual/commands/statssample.md`
+- **StatsScheffeTest** - The StatsScheffeTest operation performs Scheffe's test for the equality of the means. - `references/manual/commands/statsscheffetest.md`
+- **StatsShapiroWilkTest** - The StatsShapiroWilkTest computes Shapiro-Wilk statistic W and its associated P-value and stores them in V_statistic and V_prob respectively. - `references/manual/commands/statsshapirowilktest.md`
+- **StatsSignTest** - The StatsSignTest operation performs the sign test for paired-sample data contained in wave1 and wave2. - `references/manual/commands/statssigntest.md`
+- **StatsSpearmanRhoCDF** - The StatsSpearmanRhoCDF function returns the cumulative distribution function for Spearman's ρ, which is used in rank correlation test. - `references/manual/commands/statsspearmanrhocdf.md`
+- **StatsSRTest** - The StatsSRTest operation performs a parametric or nonparametric serial randomness test on srcWave, which must contain finite numerical data. - `references/manual/commands/statssrtest.md`
+- **StatsStudentCDF** - The StatsStudentCDF function returns the Student (uniform) cumulative distribution function. - `references/manual/commands/statsstudentcdf.md`
+- **StatsStudentPDF** - The StatsStudentPDF function returns the Student (uniform) probability distribution function. - `references/manual/commands/statsstudentpdf.md`
+- **StatsTopDownCDF** - The StatsTopDownCDF function returns the cumulative distribution function for the top-down correlation coefficient. - `references/manual/commands/statstopdowncdf.md`
+- **StatsTriangularCDF** - The StatsTriangularCDF function returns the triangular cumulative distribution function. - `references/manual/commands/statstriangularcdf.md`
+- **StatsTriangularPDF** - The StatsTriangularPDF function returns the triangular probability distribution function. - `references/manual/commands/statstriangularpdf.md`
+- **StatsTrimmedMean** - The StatsTrimmedMean function returns the mean of the wave waveName after removing trimValue fraction of the values from both tails of the distribution. - `references/manual/commands/statstrimmedmean.md`
+- **StatsTTest** - The StatsTTest operation performs two kinds of T-tests: the first compares the mean of a distribution with a specified mean value (/MEAN) and the second… - `references/manual/commands/statsttest.md`
+- **StatsTukeyTest** - The StatsTukeyTest operation performs multiple comparison Tukey (HSD) test and optionally the Newman-Keuls test. - `references/manual/commands/statstukeytest.md`
+- **StatsUSquaredCDF** - The StatsUSquaredCDF function returns the cumulative distribution function for Watson's U2 with parameters u2 (U2 statistic) and integer sample sizes n and m. - `references/manual/commands/statsusquaredcdf.md`
+- **StatsVariancesTest** - The StatsVariancesTest operation performs Bartlett's or Levene's test to determine if wave variances are equal. - `references/manual/commands/statsvariancestest.md`
+- **StatsVonMisesCDF** - The StatsVonMisesCDF function returns the von Mises cumulative distribution function. - `references/manual/commands/statsvonmisescdf.md`
+- **StatsVonMisesNoise** - The StatsVonMisesNoise function returns a pseudo-random number from a von Mises distribution whose probability density is. - `references/manual/commands/statsvonmisesnoise.md`
+- **StatsVonMisesPDF** - The StatsVonMisesPDF function returns the von Mises probability distribution function. - `references/manual/commands/statsvonmisespdf.md`
+- **StatsWaldCDF** - The StatsWaldCDF function returns the numerically evaluated inverse Gaussian or Wald cumulative distribution function. - `references/manual/commands/statswaldcdf.md`
+- **StatsWaldPDF** - The StatsWaldPDF function returns the inverse Gaussian or Wald probability distribution function. - `references/manual/commands/statswaldpdf.md`
+- **StatsWatsonUSquaredTest** - The StatsWatsonUSquaredTest operation performs Watson's nonparametric two-sample U2 test for samples of circular data. - `references/manual/commands/statswatsonusquaredtest.md`
+- **StatsWatsonWilliamsTest** - The StatsWatsonWilliamsTest operation performs the Watson-Williams test for two or more sample means. - `references/manual/commands/statswatsonwilliamstest.md`
+- **StatsWeibullCDF** - The StatsWeibullCDF function returns the Weibull cumulative distribution function. - `references/manual/commands/statsweibullcdf.md`
+- **StatsWeibullPDF** - The StatsWeibullPDF function returns the Weibull probability distribution function. - `references/manual/commands/statsweibullpdf.md`
+- **StatsWheelerWatsonTest** - The StatsWheelerWatsonTest operation performs the nonparametric Wheeler-Watson test for two or more samples. - `references/manual/commands/statswheelerwatsontest.md`
+- **StatsWilcoxonRankTest** - The StatsWilcoxonRankTest operation performs the nonparametric Wilcoxon-Mann-Whitney two-sample rank test or the Wilcoxon Signed Rank test (for paired data)… - `references/manual/commands/statswilcoxonranktest.md`
+- **StatsWRCorrelationTest** - The StatsWRCorrelationTest operation performs a Weighted Rank Correlation test on waveA and waveB, which contain the ranks of sequential factors. - `references/manual/commands/statswrcorrelationtest.md`
+- **STFT** - The STFT operation computes the Short-Time Fourier Transform of srcWave. STFT was added in Igor Pro 8.00. - `references/manual/commands/stft.md`
+- **StopMSTimer** - The StopMSTimer function frees up the timer associated with the timerRefNum and returns the number of elapsed microseconds since StartMSTimer was called for… - `references/manual/commands/stopmstimer.md`
+- **str2num** - The str2num function returns a number represented by the string expression str. - `references/manual/commands/str2num.md`
+- **String** - The String operation creates string variables and gives them the specified names. - `references/manual/commands/string.md`
+- **StringByKey** - The StringByKey function returns a substring extracted from kwListStr based on the specified key contained in keyStr. - `references/manual/commands/stringbykey.md`
+- **StringCRC** - The StringCRC function returns a 32-bit cyclic redundancy check value of bytes in str starting with inCRC. - `references/manual/commands/stringcrc.md`
+- **StringFromList** - The StringFromList function returns the index-th substring extracted from listStr starting offset bytes into listStr. - `references/manual/commands/stringfromlist.md`
+- **stringIsNull** - The stringIsNull function returns the truth that the string str is null (undefined). - `references/manual/commands/stringisnull.md`
+- **StringList** - The StringList function returns a string containing a list of global string variables selected based on the matchStr parameter. - `references/manual/commands/stringlist.md`
+- **StringMatch** - The StringMatch function tests string for a match to matchStr. You may include asterisks in matchStr as a wildcard character. - `references/manual/commands/stringmatch.md`
+- **StringToUnsignedByteWave** - The StringToUnsignedByteWave function returns a free unsigned byte wave containing the contents of str. - `references/manual/commands/stringtounsignedbytewave.md`
+- **strlen** - The strlen function returns the number of bytes in the string expression str. - `references/manual/commands/strlen.md`
+- **strsearch** - The strsearch function returns the byte position of the string expression findThisStr in the string expression str. - `references/manual/commands/strsearch.md`
+- **StructFill** - StructFill is a programmer-convenience operation that initializes NVAR, SVAR and WAVE fields in a structure. - `references/manual/commands/structfill.md`
+- **StructGet** - The StructGet operation reads binary numeric data from a specified column of a wave or from a string variable and copies the data into the specified structure… - `references/manual/commands/structget.md`
+- **StructPut** - The StructPut operation copies the binary numeric data in a structure variable to a specified column in a wave or to a string variable. - `references/manual/commands/structput.md`
+- **StrVarOrDefault** - The StrVarOrDefault function checks to see if the pathStr points to a string variable. If the string variable exists, StrVarOrDefault returns its value. - `references/manual/commands/strvarordefault.md`
+- **StudentA** - This function is deprecated. New code should use the more accurate StatsStudentCDF. - `references/manual/commands/studenta.md`
+- **StudentT** - This function is deprecated. New code should use the more accurate StatsInvStudentCDF. - `references/manual/commands/studentt.md`
+- **sum** - The sum function returns the sum of the wave elements for points from x=x1 to x=x2. - `references/manual/commands/sum.md`
+- **SumDimension** - The SumDimension operation sums values in srcWave along the specified dimension. - `references/manual/commands/sumdimension.md`
+- **SumSeries** - The SumSeries operation computes the sum of the results returned from a user-defined function for input values between two specified index limits. - `references/manual/commands/sumseries.md`
+- **SVAR_Exists** - The SVAR_Exists function returns 1 if the specified SVAR reference is valid or 0 if not. It can be used only in user-defined functions. - `references/manual/commands/svar_exists.md`

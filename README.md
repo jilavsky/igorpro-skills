@@ -1,8 +1,20 @@
-# Igor Pro — Claude Code Skills and Memory Files
+# Igor Pro — AI Skills for Claude Code, Kilo, and the Igor MCP Server
 
-This folder contains [Claude Code](https://code.claude.com) memory and skill
-files that significantly improve AI-assisted Igor Pro programming. They are
-designed for use with **Igor Pro 9 and 10** on macOS and Windows.
+This repository contains two kinds of AI skill files for Igor Pro:
+
+1. **Claude Code memory and skill files** (`.claude/`) that significantly
+   improve AI-assisted Igor Pro *programming* — code generation, debugging,
+   and conventions.
+2. **Rewritten agent skills** (`mcp skills/igor-pro/`, `LMS_Kilo/`) that are
+   meant for *using Igor itself* through the official
+   [Igor Pro MCP Server](https://docs.wavemetrics.com/igorpro/mcp-server).
+   An AI agent connected via MCP (Claude Code, Claude Desktop, Cursor, GitHub
+   Copilot, Aida, or any MCP-capable agent) can drive a running Igor Pro:
+   execute commands, call functions, compile procedures, capture graph and
+   panel windows, and look up documentation.
+
+All of them are designed for **Igor Pro 9 and 10** on macOS and Windows
+(the MCP Server itself is Windows-only and requires Igor Pro 10.05 or later).
 
 These files were developed at the APS beamline 12-ID (Argonne National
 Laboratory) for the [Irena](https://usaxs.xray.aps.anl.gov/software/irena), 
@@ -49,6 +61,18 @@ IgorPro-skills/
 │       │   └── SKILL.md       # Panel geometry, control sizes, layout patterns
 │       └── igor-python/
 │           └── SKILL.md       # igorpro Python module complete API reference
+├── mcp skills/
+│   └── igor-pro/
+│       ├── SKILL.md           # Router skill for agents driving Igor via the Igor MCP Server
+│       └── references/        # On-demand references: syntax, waves/DFREF, panels,
+│                              # graphs, Python, Igor 10 changes, command index, and a
+│                              # full Markdown mirror of the Igor Pro 10 manual
+├── LMS_Kilo/                # Same reference content packaged for Kilo Code / local agents
+│   ├── igor-commands/
+│   ├── igor-10/
+│   ├── igor-panel/
+│   ├── igor-python/
+│   └── igor-wave-dfref/
 ├── global-CLAUDE.md           # Template for ~/.claude/CLAUDE.md (global, all projects)
 ├── project-CLAUDE.md          # Template CLAUDE.md for your Igor project repos
 ├── .gitignore
@@ -61,6 +85,53 @@ project repo, or into `~/.claude/` to apply the skills globally across all proje
 The two `CLAUDE.md` templates are starting points you edit for your own context:
 - [`global-CLAUDE.md`](global-CLAUDE.md) → copy to `~/.claude/CLAUDE.md`
 - [`project-CLAUDE.md`](project-CLAUDE.md) → copy to `<your-igor-repo>/CLAUDE.md`
+
+---
+
+## Using the Skills with an AI Agent Driving Igor (Igor MCP Server)
+
+The `mcp skills/igor-pro` skill is different from the Claude Code skills: it is
+written for AI agents that *use a running Igor Pro* through the official
+[Igor Pro MCP Server](https://docs.wavemetrics.com/igorpro/mcp-server), not just
+for generating Igor code text. Agents that support MCP — Claude Code, Claude
+Desktop, Aida, Cursor, GitHub Copilot in VS Code, or any MCP-capable agent — can
+execute Igor commands, call your functions, compile procedures, capture graphs
+and panels for visual verification, and look up documentation, all inside your
+live Igor session.
+
+### 1. Install the Igor Pro MCP Server
+
+- Requires **Windows** and **Igor Pro 10.05 or later**.
+- In Igor: `Help → AI Tools → Install/Repair Igor Pro MCP Server`, or download
+  and run `setupIgorProMCPServer.exe` from the WaveMetrics site.
+- Enable AI app connections from the same menu or the AI button in Igor's
+  status bar.
+
+### 2. Connect your AI app to the server
+
+For example, in Claude Code (PowerShell):
+
+```bash
+claude mcp add --scope user igor -- "$env:LOCALAPPDATA\Programs\WaveMetrics\Igor Pro MCP Server\igor-mcp-server.exe"
+```
+
+In Claude Desktop, Cursor, or Copilot, add an `igor` entry pointing to
+`igor-mcp-server.exe` in the app's MCP configuration file (see the
+[official MCP Server docs](https://docs.wavemetrics.com/igorpro/mcp-server)
+for app-by-app instructions).
+
+### 3. Register the skill
+
+Point the agent at `mcp skills/igor-pro/SKILL.md`. In Claude Code, copy the
+folder into `.claude/skills/igor-pro/`; in other agents, place it in whatever
+skills directory the agent supports (see that app's documentation). The
+`SKILL.md` acts as a router: the agent loads only the relevant reference file
+from `mcp skills/igor-pro/references/` on demand — including a full local
+Markdown mirror of the Igor Pro 10 manual — so it can verify syntax and flags
+without guessing or fetching web pages.
+
+The `LMS_Kilo/` folder packages the same reference content in the skill format
+used by Kilo Code and similar local agents.
 
 ---
 
@@ -248,6 +319,34 @@ or writing Igor procedure code that calls Python.
 
 ---
 
+### `igor-pro` — Driving a Running Igor via the Igor MCP Server (`mcp skills/igor-pro/`)
+
+This is the rewritten skill for agents that connect to Igor Pro through the
+Igor Pro MCP Server (e.g. via Aida, Claude, Cursor, or Copilot). Instead of
+just generating code, the agent works *inside* a live Igor session using the
+`Igor__` tools:
+
+- `Igor__execute_command` — run Igor operations (`Display`, `Make`, `WaveStats`…)
+- `Igor__call_function` — call your own or built-in functions with return values
+- `Igor__compile_procedures` — compile edited procedure files and fix errors
+- `Igor__capture_window` — visually verify graphs and panels after creating them
+- `Igor__get_help` — look up exact syntax, flags, and output variables
+
+The skill's `SKILL.md` is a router that loads only the matching reference on
+demand: `references/syntax.md`, `references/wave-dfref.md`, `references/panel.md`,
+`references/graphs.md`, `references/python.md`, `references/10-changes.md`, the
+alphabetical command index in `references/commands/`, and a full Markdown mirror
+of the Igor Pro 10 manual in `references/manual/`. It also encodes working rules
+for the MCP tools — e.g. verify graphs with `Igor__capture_window`, run
+`Igor__compile_procedures` after edits before reporting success, and never guess
+operation flags when a local reference page exists.
+
+**Use when:** you want the AI agent to actually run Igor Pro — load data, make
+and refine graphs, build panels, execute analysis, and check its own results —
+not just write `.ipf` text.
+
+---
+
 ## Keeping Skills Up to Date
 
 The official Igor Pro documentation lives at:
@@ -272,8 +371,11 @@ XOP APIs, curve fitting conventions), follow the same structure:
 .claude/skills/<skill-name>/SKILL.md
 ```
 
+or add a reference file under `mcp skills/igor-pro/references/` and link it
+from that skill's `SKILL.md` router table.
+
 Keep skill files focused and practical — they should answer the question
-"what would Claude get wrong without this?" not serve as a general tutorial.
+"what would the AI get wrong without this?" not serve as a general tutorial.
 Include working code examples wherever possible.
 
 ---
@@ -282,10 +384,13 @@ Include working code examples wherever possible.
 
 | Tool | Support |
 |------|---------|
-| Claude Code (CLI + VSCode extension) | ✅ Full support — skills and CLAUDE.md |
+| Claude Code (CLI + VSCode extension) | ✅ Full support — skills, CLAUDE.md, and MCP server |
+| Claude Desktop | ✅ Connect to the Igor Pro MCP Server + attach skill files |
+| Aida (or any MCP-capable agent) | ✅ Use `mcp skills/igor-pro/` with the Igor MCP Server tools |
+| Cursor, GitHub Copilot in VS Code | ✅ Supported by the Igor Pro MCP Server (Windows) |
 | Claude.ai Projects | ✅ Attach skill `.md` files as project documents |
 | AnythingLLM | ✅ Use as embedded documents in a workspace |
-| Other editors (Cursor, Zed, etc.) | ⚠️ Rename `CLAUDE.md` → `AGENTS.md` for cross-tool support |
+| Other editors (Zed, etc.) | ⚠️ Rename `CLAUDE.md` → `AGENTS.md` for cross-tool support |
 
 ---
 

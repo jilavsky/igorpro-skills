@@ -1,0 +1,67 @@
+# Igor Pro commands starting with I
+
+Each line: **Name** - one-line summary - local page to read with read_file for full syntax, flags, outputs, examples.
+
+- **i** - The i function returns the loop index of the inner most iterate loop in a macro. Not to be used in a function. - `references/manual/commands/i.md`
+- **ICA** - The ICA operation performs independent component analysis using the FastICA algorithm. - `references/manual/commands/ica.md`
+- **IFFT** - The IFFT operation calculates the Inverse Discrete Fourier Transform of srcWave using a multidimensional fast prime factor decomposition algorithm. - `references/manual/commands/ifft.md`
+- **IgorInfo** - The IgorInfo function returns information about the Igor application and the environment in which it is running. - `references/manual/commands/igorinfo.md`
+- **IgorVersion** - The IgorVersion function returns version number of the Igor application as a floating point number. Igor Pro 8.00 returns 8.00, as does Igor Pro 8.00A. - `references/manual/commands/igorversion.md`
+- **ilim** - The ilim function returns the ending loop count for the inner most iterate loop in a macro. Not to be used in a function. - `references/manual/commands/ilim.md`
+- **imag** - The imag function returns the imaginary component of the complex number z as a real (not complex) number. - `references/manual/commands/imag.md`
+- **ImageAnalyzeParticles** - The ImageAnalyzeParticles operation performs one of two particle analysis operations on a 2D or 3D source wave imageMatrix. - `references/manual/commands/imageanalyzeparticles.md`
+- **ImageBlend** - The ImageBlend operation takes two RGB images (3D waves) in srcWaveA and srcWaveB and computes the alpha blending so that. - `references/manual/commands/imageblend.md`
+- **ImageBoundaryToMask** - The ImageBoundaryToMask operation scan-converts a pair of x,y waves into an ROI mask wave. - `references/manual/commands/imageboundarytomask.md`
+- **ImageComposite** - The ImageComposite operation creates a new image by combining srcImageA and srcImageB subject to one of 12 Porter-Duff compositing modes. - `references/manual/commands/imagecomposite.md`
+- **ImageEdgeDetection** - The ImageEdgeDetection operation performs one of several standard image edge detection operations on the source wave ImageMatrix. - `references/manual/commands/imageedgedetection.md`
+- **ImageFileInfo** - ImageFileInfo is no longer supported and always returns an error. - `references/manual/commands/imagefileinfo.md`
+- **ImageFilter** - The ImageFilter operation is identical to MatrixFilter, accepting the same parameters and flags, with the exception of the additional features described below. - `references/manual/commands/imagefilter.md`
+- **ImageFocus** - The ImageFocus operation creates in focus image(s) from a stack of images that contain in and out of focus regions. - `references/manual/commands/imagefocus.md`
+- **ImageFromXYZ** - ImageFromXYZ converts XYZ data to matrix form. You might use it, for example, to convert a "sparse matrix" to an actual matrix for easier display and… - `references/manual/commands/imagefromxyz.md`
+- **ImageGenerateROIMask** - The ImageGenerateROIMask operation creates a Region Of Interest (ROI) mask for use with ImageXXX commands. - `references/manual/commands/imagegenerateroimask.md`
+- **ImageGLCM** - The ImageGLCM operation calculates the gray-level co-occurrence matrix for an 8-bit grayscale image and optionally evaluates Haralick's texture parameters. - `references/manual/commands/imageglcm.md`
+- **ImageHistModification** - ImageHistModification performs a modification of the image histogram and saves the results in the wave M_ImageHistEq or as specified by the /DEST flag. - `references/manual/commands/imagehistmodification.md`
+- **ImageHistogram** - ImageHistogram calculates the histogram of imageMatrix. When imageMatrix is a grayscale image, the histogram is stored in the wave W_ImageHist in the current… - `references/manual/commands/imagehistogram.md`
+- **ImageInfo** - The ImageInfo function returns a string containing a semicolon-separated list of information about the specified image in the named graph window or subwindow. - `references/manual/commands/imageinfo.md`
+- **ImageInterpolate** - The ImageInterpolate operation interpolates the source srcWave and stores the results in the wave M_InterpolatedImage in the current data folder unless you… - `references/manual/commands/imageinterpolate.md`
+- **ImageLineProfile** - ImageLineProfile samples the source image (srcWave) along an arbitrary path described by the pair of waves: xWave and yWave. - `references/manual/commands/imagelineprofile.md`
+- **ImageLoad** - The ImageLoad operation loads an image file into an Igor wave. It can load PNG, JPEG, BMP, TIFF, and Sun Raster files. - `references/manual/commands/imageload.md`
+- **ImageMorphology** - The ImageMorphology operation performs one of several standard image morphology operations on the source ImageMatrix. - `references/manual/commands/imagemorphology.md`
+- **ImageNameList** - The ImageNameList function returns a string containing a list of image names in the graph window or subwindow identified by graphNameStr. - `references/manual/commands/imagenamelist.md`
+- **ImageNameToWaveRef** - The ImageNameToWaveRef function returns a wave reference to the 2D wave corresponding to the given image name in the graph window or subwindow named by… - `references/manual/commands/imagenametowaveref.md`
+- **ImageRegistration** - The ImageRegistration operation adjusts the test image wave, testWave, to match the reference image wave, refWave, possibly subject to auxiliary mask waves. - `references/manual/commands/imageregistration.md`
+- **ImageRemoveBackground** - The ImageRemoveBackground operation removes a general background level, described by a polynomial of a specified order, from the image in srcWave. - `references/manual/commands/imageremovebackground.md`
+- **ImageRestore** - The ImageRestore operation performs the Richardson-Lucy iterative image restoration. - `references/manual/commands/imagerestore.md`
+- **ImageRotate** - Rotates the image clockwise by angle (degrees) or counter-clockwise if /W is used. - `references/manual/commands/imagerotate.md`
+- **ImageSave** - The ImageSave operation saves the named wave as an image file. Previously this operation used QuickTime to implement the saving of some file formats. - `references/manual/commands/imagesave.md`
+- **ImageSeedFill** - The ImageSeedFill operation takes a seed pixel and fills a contiguous region with the target value, storing the result in the wave M_SeedFill. - `references/manual/commands/imageseedfill.md`
+- **ImageSkeleton3D** - ImageSkeleton3D computes the skeleton of a 3D binary object in srcWave using a thinning algorithm. - `references/manual/commands/imageskeleton3d.md`
+- **ImageSnake** - The ImageSnake operation creates or modifies an active contour/snake in the grayscale image srcWave. - `references/manual/commands/imagesnake.md`
+- **ImageStats** - The ImageStats operation calculates wave statistics for specified regions of interest in a real matrix wave. - `references/manual/commands/imagestats.md`
+- **ImageThreshold** - Performs thresholding operation converts a grayscale imageMatrix into a binary image. This operation supports all data types. - `references/manual/commands/imagethreshold.md`
+- **ImageTransform** - The ImageTransform operation performs one of a number of transformations on ImageMatrix. - `references/manual/commands/imagetransform.md`
+- **ImageUnwrapPhase** - ImageUnwrapPhase unwraps a 2D phase in srcPhaseWave and stores the result in the specified destination wave or in the wave M_UnwrappedPhase in the current… - `references/manual/commands/imageunwrapphase.md`
+- **ImageWindow** - ImageWindow multiplies srcWave by the specified window function. ImageWindow is useful in preparing an image for FFT analysis by reducing FFT artifacts… - `references/manual/commands/imagewindow.md`
+- **IndependentModuleList** - The IndependentModuleList function returns a string containing a list of independent module names separated by listSepStr. - `references/manual/commands/independentmodulelist.md`
+- **IndexedDir** - The IndexedDir function returns a string containing the name of or the full path to the index'th folder in the folder referenced by pathName. - `references/manual/commands/indexeddir.md`
+- **IndexedFile** - If index is greater than or equal to zero, IndexedFile returns a string containing the name of the index th file in the folder specified by pathName which… - `references/manual/commands/indexedfile.md`
+- **IndexSort** - The IndexSort operation sorts the values in each sortedWaveName wave according to the Y values of indexWaveName. - `references/manual/commands/indexsort.md`
+- **IndexToScale** - The IndexToScale function returns the scaled coordinate value corresponding to wave element index in the specified dimension. - `references/manual/commands/indextoscale.md`
+- **Inf** - The Inf function returns the "infinity" value. - `references/manual/commands/inf.md`
+- **InsertPoints** - The InsertPoints operation inserts numElements points in front of point beforeElement in each waveName. The new elements have the value zero. - `references/manual/commands/insertpoints.md`
+- **InstantFrequency** - The InstantFrequency operation computes the instanteous frequency, and optionally the instantaneous amplitude, of srcWave. - `references/manual/commands/instantfrequency.md`
+- **Integrate** - The Integrate operation calculates the 1D numeric integral of a wave. The X scaling of each wave is taken into account. - `references/manual/commands/integrate.md`
+- **Integrate1D** - The Integrate1D function performs numerical integration of a user function between the specified limits (min_x and max_x). - `references/manual/commands/integrate1d.md`
+- **Integrate2D** - The Integrate2D operation calculates a two-dimensional numeric integral of a real-valued user-defined function or a wave. - `references/manual/commands/integrate2d.md`
+- **IntegrateODE** - The IntegrateODE operation calculates a numerical solution to a set of coupled ordinary differential equations by integrating derivatives. - `references/manual/commands/integrateode.md`
+- **interp** - The interp function returns a linearly interpolated value at the location x = x1 of a curve whose X components come from the Y values of xwaveName and whose y… - `references/manual/commands/interp.md`
+- **Interp2D** - The Interp2D function returns a double precision number as the bilinear interpolation value at the specified coordinates of the source wave. - `references/manual/commands/interp2d.md`
+- **Interp3D** - The Interp3D function returns an interpolated value for location P=(x, y, z) in a 3D scalar distribution srcWave. - `references/manual/commands/interp3d.md`
+- **Interp3DPath** - The Interp3DPath operation computes the trilinear interpolated values of 3dWave for each position specified by a row in tripletPathWave (which is a 3 column… - `references/manual/commands/interp3dpath.md`
+- **Interp4D** - The Interp4D function returns an interpolated value for location P=(x, y, z, t) in a 4D scalar distribution srcWave. - `references/manual/commands/interp4d.md`
+- **Interp4DPath** - The Interp4DPath operation computes the (4D) linearly interpolated values of 4dWave for each position specified by a row of pathWave. - `references/manual/commands/interp4dpath.md`
+- **Interpolate2** - The Interpolate2 operation performs linear, cubic spline and smoothing cubic spline interpolation on 1D waveform or XY data. - `references/manual/commands/interpolate2.md`
+- **Interpolate3D** - The Interpolate3D operation uses a precomputed triangulation of sWave (see Triangulate3D) to calculate regularly spaced interpolated values from an… - `references/manual/commands/interpolate3d.md`
+- **inverseErf** - The inverseErf function returns the inverse of the error function. The function is calculated using rational approximations in several regions followed by one… - `references/manual/commands/inverseerf.md`
+- **inverseErfc** - The inverseErfc function returns the inverse of the complementary error function. - `references/manual/commands/inverseerfc.md`
+- **ItemsInList** - The ItemsInList function returns the number of items in listStr. listStr should contain items separated by listSepStr which typically is ";". - `references/manual/commands/itemsinlist.md`

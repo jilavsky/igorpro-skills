@@ -1,0 +1,77 @@
+# Igor Pro commands starting with C
+
+Each line: **Name** - one-line summary - local page to read with read_file for full syntax, flags, outputs, examples.
+
+- **cabs** - The cabs function returns the real-valued absolute value of complex number z. - `references/manual/commands/cabs.md`
+- **CaptureHistory** - The CaptureHistory function returns a string containing text from the history area of the command window since a matching call to the CaptureHistoryStart… - `references/manual/commands/capturehistory.md`
+- **CaptureHistoryStart** - The CaptureHistoryStart function returns a reference number to identify a starting point in the history area text. - `references/manual/commands/capturehistorystart.md`
+- **cd** - The cd operation sets the current data folder to the specified data folder. It is identical to the longer-named SetDataFolder operation. - `references/manual/commands/cd.md`
+- **ceil** - The ceil function returns the closest integer greater than or equal to num. - `references/manual/commands/ceil.md`
+- **centerOfMass** - The centerOfMass function returns the 1D center of mass for srcWave X values from x=x1 to x=x2. - `references/manual/commands/centerofmass.md`
+- **centerOfMassXY** - The centerOfMassXY function returns the 1D center of mass for the pair of waves. - `references/manual/commands/centerofmassxy.md`
+- **cequal** - The cequal function determines the equality of two complex numbers z1 and z2. It returns 1 if they are equal, or 0 if not. - `references/manual/commands/cequal.md`
+- **char2num** - The char2num function returns a numeric code representing the first byte of str or the first character of str. - `references/manual/commands/char2num.md`
+- **Chart** - The Chart operation creates or modifies a chart control. Charts are generally used in conjunction with data acquisition. - `references/manual/commands/chart.md`
+- **chebyshev** - The chebyshev function returns the Chebyshev polynomial of the first kind and of degree n. - `references/manual/commands/chebyshev.md`
+- **chebyshevU** - The chebyshevU function returns the Chebyshev polynomial of the second kind, degree n and argument x. - `references/manual/commands/chebyshevu.md`
+- **CheckBox** - The CheckBox operation creates or modifies a checkbox, radio button or disclosure triangle in the target or named window which must be a graph or control panel. - `references/manual/commands/checkbox.md`
+- **CheckDisplayed** - The CheckDisplayed operation determines if named waves are displayed or otherwise used in a host window or subwindow. - `references/manual/commands/checkdisplayed.md`
+- **CheckName** - The CheckName function returns a number which indicates if the specified name is legal and unique among objects in the namespace of the specified object type. - `references/manual/commands/checkname.md`
+- **ChildWindowList** - The ChildWindowList function returns a string containing a semicolon-separated list of immediate subwindow window names of the specified host window or… - `references/manual/commands/childwindowlist.md`
+- **ChooseColor** - The ChooseColor operation displays a dialog for choosing a color. The color initially shown is black unless you specify a different color with /C. - `references/manual/commands/choosecolor.md`
+- **CleanupName** - The CleanupName function returns the input name string, possibly altered to make it a legal object name. - `references/manual/commands/cleanupname.md`
+- **Close** - The Close operation closes a file previously opened by the Open operation or closes all such files, if /A is used. - `references/manual/commands/close.md`
+- **CloseHelp** - The CloseHelp operation closes a help window. The CloseHelp operation was added in Igor Pro 7.00. - `references/manual/commands/closehelp.md`
+- **CloseMovie** - The CloseMovie operation closes the currently open movie. You must close a movie before you can play it. - `references/manual/commands/closemovie.md`
+- **CloseProc** - The CloseProc operation closes a procedure window. You cannot call CloseProc on the main Procedure window. - `references/manual/commands/closeproc.md`
+- **cmplx** - The cmplx function returns a complex number whose real component is realPart and whose imaginary component is imagPart. - `references/manual/commands/cmplx.md`
+- **CmpStr** - The CmpStr function returns zero if str1 is equal to str2 or non-zero otherwise. - `references/manual/commands/cmpstr.md`
+- **ColorScale** - The ColorScale operation adds a color scale (or "color legend") annotation a graph, Gizmo plot or page layout. For background information, see Color Scales. - `references/manual/commands/colorscale.md`
+- **ColorTab2Wave** - The ColorTab2Wave operation extracts colors from the built-in color table and places them in an Nx3 matrix of red, green and blue columns named M_colors. - `references/manual/commands/colortab2wave.md`
+- **Concatenate** - The Concatenate operation combines data from the source waves into destWave, which is created if it does not already exist. - `references/manual/commands/concatenate.md`
+- **conj** - The conj function returns the complex conjugate of the complex value z. - `references/manual/commands/conj.md`
+- **ContourInfo** - The ContourInfo function returns a string containing a semicolon-separated list of information about the specified contour plot in the named graph. - `references/manual/commands/contourinfo.md`
+- **ContourNameList** - The ContourNameList function returns a string containing a list of contour names in the graph window or subwindow identified by graphNameStr. - `references/manual/commands/contournamelist.md`
+- **ContourNameToWaveRef** - The ContourNameToWaveRef function returns a wave reference to the wave corresponding to the given contour name in the graph window or subwindow named by… - `references/manual/commands/contournametowaveref.md`
+- **ContourZ** - The ContourZ function returns the interpolated Z value of the named contour plot data displayed in the named graph. - `references/manual/commands/contourz.md`
+- **ControlBar** - The ControlBar operation sets the size (height or width) and location (top/left/bottom/right) of a control bar in a graph. - `references/manual/commands/controlbar.md`
+- **ControlInfo** - The ControlInfo operation returns information about the state or status of the named control in a graph or panel window or subwindow. - `references/manual/commands/controlinfo.md`
+- **ControlNameList** - The ControlNameList function returns a string containing a list of control names in the graph or panel window or subwindow identified by winNameStr. - `references/manual/commands/controlnamelist.md`
+- **ControlUpdate** - The ControlUpdate operation updates the named control or all controls in a window, which can be the top graph or control panel or the named graph or control… - `references/manual/commands/controlupdate.md`
+- **ConvertGlobalStringTextEncoding** - The ConvertGlobalStringTextEncoding operation converts the contents of the specified global string variables or the contents of all global string variables in… - `references/manual/commands/convertglobalstringtextencoding.md`
+- **ConvertTextEncoding** - ConvertTextEncoding converts text from one text encoding to another. The ConvertTextEncoding function was added in Igor Pro 7.00. - `references/manual/commands/converttextencoding.md`
+- **ConvexHull** - The ConvexHull operation calculates the convex hull in either 2 or 3 dimensions. The dimensionality is deduced from the input wave(s). - `references/manual/commands/convexhull.md`
+- **Convolve** - The Convolve operation convolves srcWaveName with each destination wave, putting the result of each convolution in the corresponding destination wave. - `references/manual/commands/convolve.md`
+- **CopyDimLabels** - The CopyDimLabels operation copies dimension labels from the source wave to the destination wave or waves. - `references/manual/commands/copydimlabels.md`
+- **CopyFile** - The CopyFile operation copies a file on disk. srcFileStr can be a full path to the file to be copied (in which case /P is not needed), a partial path relative… - `references/manual/commands/copyfile.md`
+- **CopyFolder** - The CopyFolder operation copies a folder (and its contents) on disk. The CopyFolder command can destroy data by overwriting another folder and contents! - `references/manual/commands/copyfolder.md`
+- **CopyScales** - The CopyScales operation copies the x, y, z, and t scaling, x, y, z, and t units, the data Full Scale and data units from srcWaveName to the other waves. - `references/manual/commands/copyscales.md`
+- **Correlate** - The Correlate operation correlates srcWaveName with each destination wave, putting the result of each correlation in the corresponding destination wave. - `references/manual/commands/correlate.md`
+- **cos** - The cos function returns the cosine of angle which is in radians. In complex expressions, angle is complex, and cos(angle) returns a complex value. - `references/manual/commands/cos.md`
+- **cosh** - The cosh function returns the hyperbolic cosine of num: $$ \displaystyle \cosh (x)=\frac{e^{x}+e^{-x}}{2}. $$. - `references/manual/commands/cosh.md`
+- **CosIntegral** - The CosIntegral(z) function returns the cosine integral of z. If z is real, a real value is returned. If z is complex then a complex value is returned. - `references/manual/commands/cosintegral.md`
+- **cot** - The cot function returns the cotangent of angle which is in radians. In complex expressions, angle is complex, and cot(angle) returns a complex value. - `references/manual/commands/cot.md`
+- **coth** - The coth function returns the hyperbolic cotangent of num: $$ \displaystyle \operatorname{coth}(x)=\frac{e^{x}+e^{-x}}{e^{x}-e^{-x}}. - `references/manual/commands/coth.md`
+- **CountObjects** - The CountObjects function returns the number of objects of the specified type in the data folder specified by the string expression. - `references/manual/commands/countobjects.md`
+- **CountObjectsDFR** - The CountObjectsDFR function returns the number of objects of the specified type in the data folder specified by the data folder reference dfr. - `references/manual/commands/countobjectsdfr.md`
+- **cpowi** - The cpowi function is obsolete as the exponentiation operator ^ handles complex expressions with any combination of real, integer and complex arguments. - `references/manual/commands/cpowi.md`
+- **CreateAliasShortcut** - The CreateAliasShortcut operation creates a shortcut file on disk. The shortcut can point to either a file or a folder. - `references/manual/commands/createaliasshortcut.md`
+- **CreateBrowser** - The CreateBrowser operation creates a data browser window. It has two uses. - `references/manual/commands/createbrowser.md`
+- **CreateDataObjectName** - The CreateDataObjectName function returns a name suitable for use for a new object of the type specified by objectType. - `references/manual/commands/createdataobjectname.md`
+- **CreationDate** - The CreationDate function returns creation date of wave as an Igor date/time value, which is the number of seconds from 1/1/1904. - `references/manual/commands/creationdate.md`
+- **Cross** - The Cross operation computes the cross products vectorA x vectorB and vectorA x (vectorB x vectorC). Each vector is a 1D real wave containing 3 rows. - `references/manual/commands/cross.md`
+- **csc** - The csc function returns the cosecant of angle which is in radians. $$ \displaystyle \csc (x)=\frac{1}{\sin (x)}. $$. - `references/manual/commands/csc.md`
+- **csch** - The csch function returns the hyperbolic cosecant of x. $$ \displaystyle \operatorname{csch}(x)=\frac{1}{\sinh (x)}=\frac{2}{e^{x}-e^{-x}}. - `references/manual/commands/csch.md`
+- **CsrInfo** - The CsrInfo function returns a keyword-value pair list of information about the specified cursor (cursorName is A through J) in the top graph or graph… - `references/manual/commands/csrinfo.md`
+- **CsrWave** - The CsrWave function returns a string containing the name of the wave the specified cursor (A through J) is on in the top (or named) graph. - `references/manual/commands/csrwave.md`
+- **CsrWaveRef** - The CsrWaveRef function returns a wave reference to the wave the specified cursor (A through J) is on in the top (or named) graph. - `references/manual/commands/csrwaveref.md`
+- **CsrXWave** - The CsrXWave function returns a string containing the name of the wave supplying the X coordinates for an XY plot of the Y wave the specified cursor (A… - `references/manual/commands/csrxwave.md`
+- **CsrXWaveRef** - The CsrXWaveRef function returns a wave reference to the wave supplying the X coordinates for an XY plot of the Y wave the specified cursor (A through J) is… - `references/manual/commands/csrxwaveref.md`
+- **CTabList** - The CTabList function returns a semicolon-separated list of the names of Igor's built-in color tables. - `references/manual/commands/ctablist.md`
+- **CtrlBackground** - The CtrlBackground operation controls the unnamed background task. CtrlBackground works only with the unnamed background task. - `references/manual/commands/ctrlbackground.md`
+- **CtrlFIFO** - The CtrlFIFO operation controls various aspects of the named FIFO. Once start has been issued, the FIFO can accept no further commands except stop. - `references/manual/commands/ctrlfifo.md`
+- **CtrlNamedBackground** - The CtrlNamedBackground operation creates and controls named background tasks. - `references/manual/commands/ctrlnamedbackground.md`
+- **Cursor** - The Cursor operation moves the cursor specified by cursorName onto the named trace at the point whose X value is x_value or the coordinates of an image pixel… - `references/manual/commands/cursor.md`
+- **CurveFit** - The CurveFit operation fits one of several built-in functions to your data (for user-defined fits, see the FuncFit operation). - `references/manual/commands/curvefit.md`
+- **CustomControl** - The CustomControl operation creates or modifies a custom control in the target window. - `references/manual/commands/customcontrol.md`
+- **CWT** - The CWT operation computes the continuous wavelet transform (CWT) of a 1D real-valued input wave (srcWave). The input can be of any numeric type. - `references/manual/commands/cwt.md`

@@ -1,0 +1,56 @@
+# Igor Pro commands starting with F
+
+Each line: **Name** - one-line summary - local page to read with read_file for full syntax, flags, outputs, examples.
+
+- **factorial** - The factorial function returns n!, where n is assumed to be a positive integer. - `references/manual/commands/factorial.md`
+- **Faddeeva** - Faddeeva computes the Faddeeva function, also commonly denoted as "w", using an approximation that has an accuracy, as described by the author, of "typically… - `references/manual/commands/faddeeva.md`
+- **FakeData** - The FakeData function puts fake data in the named wave, which must be single-precision float. - `references/manual/commands/fakedata.md`
+- **FastGaussTransform** - The FastGaussTransform operation implements an efficient algorithm for evaluating the discrete Gauss transform as given by. - `references/manual/commands/fastgausstransform.md`
+- **FastOp** - The FastOp operation can be used to get improved speed out of certain wave assignment statements. - `references/manual/commands/fastop.md`
+- **faverage** - The faverage function returns the trapezoidal average value of the named wave from x=x1 to x=x2. - `references/manual/commands/faverage.md`
+- **faverageXY** - The faverageXY function returns the trapezoidal average value of YWaveName from x=x1 to x=x2, using X values from XWaveName. - `references/manual/commands/faveragexy.md`
+- **FBInRead** - The FBinRead operation reads binary data from the file specified by refNum into the named object. - `references/manual/commands/fbinread.md`
+- **FBInWrite** - The FBinWrite operation writes the named object in binary to a file. refNum is a file reference number from the Open operation used to open the file. - `references/manual/commands/fbinwrite.md`
+- **FetchURL** - The FetchURL function returns a string containing the server's response to a request to get the contents of the URL specified by urlStr. - `references/manual/commands/fetchurl.md`
+- **FFT** - The FFT operation computes the Discrete Fourier Transform of srcWave using a multidimensional prime factor decomposition algorithm. - `references/manual/commands/fft.md`
+- **FGetPos** - The FGetPos operation returns the file position for a file. FGetPos is a faster alternative to FStatus if the only thing you are interested in is the file… - `references/manual/commands/fgetpos.md`
+- **FIFO2Wave** - The FIFO2Wave operation copies FIFO data from the specified channel of the named FIFO into the named wave. - `references/manual/commands/fifo2wave.md`
+- **FIFOStatus** - The FIFOStatus operation returns miscellaneous information about a FIFO and its channels. FIFOs are used for data acquisition. - `references/manual/commands/fifostatus.md`
+- **FilterFIR** - The FilterFIR operation convolves each waveName with automatically-designed filter coefficients or with coefsWaveName using time-domain methods. - `references/manual/commands/filterfir.md`
+- **FilterIIR** - The FilterIIR operation applies to each waveName either the automatically-designed IIR filter coefficients or the IIR filter coefficients in coefsWaveName. - `references/manual/commands/filteriir.md`
+- **FindAPeak** - FindAPeak locates the maximum or minimum of a peak by analyzing smoothed first and second derivatives. - `references/manual/commands/findapeak.md`
+- **FindContour** - The FindContour operation creates an XY pair of waves representing the locus of the solution to matrixWave=level. - `references/manual/commands/findcontour.md`
+- **FindDimLabel** - The FindDimLabel function returns the index value corresponding to the label for the given dimension. - `references/manual/commands/finddimlabel.md`
+- **FindDuplicates** - The FindDuplicates operation identifies duplicate values in a wave and optionally creates various output waves. - `references/manual/commands/findduplicates.md`
+- **FindLevel** - The FindLevel operation searches the named wave to find the X value at which the specified Y level is crossed. - `references/manual/commands/findlevel.md`
+- **FindLevels** - The FindLevels operation searches the named wave to find one or more X values at which the specified Y level is crossed. - `references/manual/commands/findlevels.md`
+- **FindListItem** - The FindListItem function returns the byte offset into listStr where itemStr begins. listStr should contain items separated by the listSepStr. - `references/manual/commands/findlistitem.md`
+- **FindPeak** - The FindPeak operation searches for a minimum or maximum by analyzing the smoothed first and second derivatives of the named wave. - `references/manual/commands/findpeak.md`
+- **FindPointsInPoly** - The FindPointsInPoly operation determines if points fall within a certain polygon. - `references/manual/commands/findpointsinpoly.md`
+- **FindRoots** - The FindRoots operation determines roots or zeroes of a specified nonlinear function or system of functions. - `references/manual/commands/findroots.md`
+- **FindSequence** - The FindSequence operation finds the location of the specified sequence starting the search from the specified start point. - `references/manual/commands/findsequence.md`
+- **FindValue** - The FindValue operation finds the location of the specified value starting the search from the specified start point. - `references/manual/commands/findvalue.md`
+- **floor** - The floor function returns the closest integer less than or equal to num. - `references/manual/commands/floor.md`
+- **FMaxFlat** - The FMaxFlat operation calculates the coefficients of Kaiser's maximally flat filter. - `references/manual/commands/fmaxflat.md`
+- **FontList** - The FontList function returns a list of the installed fonts, separated by the characters in separatorStr. - `references/manual/commands/fontlist.md`
+- **FontSizeHeight** - The FontSizeHeight function returns the line height in pixels of any string when rendered with the named font and the given font style and size. - `references/manual/commands/fontsizeheight.md`
+- **FontSizeStringWidth** - The FontSizeStringWidth function returns the width of theStr in pixels, when rendered with the named font and the given font style and size. - `references/manual/commands/fontsizestringwidth.md`
+- **FPClustering** - The FPClustering operation performs cluster analysis using the farthest-point clustering algorithm. - `references/manual/commands/fpclustering.md`
+- **fprintf** - The fprintf operation prints formatted output to a text file. refNum is a file reference number from the Open operation used to create the file. - `references/manual/commands/fprintf.md`
+- **FReadLine** - The FReadLine operation reads bytes from a file into the named string variable. - `references/manual/commands/freadline.md`
+- **fresnelCos** - The fresnelCos function returns the Fresnel cosine function C (x). $$ \displaystyle C(x)=\int_{0}^{x} \cos \left(\frac{\pi}{2} t^{2}\right) d t. - `references/manual/commands/fresnelcos.md`
+- **fresnelCS** - The fresnelCS function returns returns both the Fresnel cosine in the real part of the result and the Fresnel sine in the imaginary part of the result. - `references/manual/commands/fresnelcs.md`
+- **fresnelSin** - The fresnelSin function returns the Fresnel sine function S(x). $$ \displaystyle S(x)=\int_{0}^{x} \sin \left(\frac{\pi}{2} t^{2}\right) d t. - `references/manual/commands/fresnelsin.md`
+- **FSetPos** - The FSetPos operation attempts to set the current file position to the given position. - `references/manual/commands/fsetpos.md`
+- **FStatus** - The FStatus operation provides file status information for a file. refNum is a file reference number obtained from the Open operation. - `references/manual/commands/fstatus.md`
+- **FTPCreateDirectory** - The FTPCreateDirectory operation creates a directory on an FTP server on the Internet. - `references/manual/commands/ftpcreatedirectory.md`
+- **FTPDelete** - The FTPDelete operation deletes a file or a directory from an FTP server on the Internet. - `references/manual/commands/ftpdelete.md`
+- **FTPDownload** - The FTPDownload operation downloads a file or a directory from an FTP server on the Internet. - `references/manual/commands/ftpdownload.md`
+- **FTPUpload** - The FTPUpload operation uploads a file or a directory to an FTP server on the Internet. - `references/manual/commands/ftpupload.md`
+- **FuncFit** - The FuncFit operation performs a curve fit to a user defined function, or to a sum of fit functions using the second form (see Fitting Sums of Fit Functions… - `references/manual/commands/funcfit.md`
+- **FuncFitMD** - The FuncFitMD operation performs a curve fit to the multivariate user defined function specified by fitFuncName. - `references/manual/commands/funcfitmd.md`
+- **FuncRefInfo** - The FuncRefInfo function returns information about a FUNCREF. funcRef is a function reference variable declared by a FUNCREF statement in a user-defined… - `references/manual/commands/funcrefinfo.md`
+- **FunctionInfo** - The FunctionInfo function returns a keyword-value pair list of information about the user-defined or external function name in functionNameStr. - `references/manual/commands/functioninfo.md`
+- **FunctionList** - The FunctionList function returns a string containing a list of built-in or user-defined function names satisfying certain criteria. - `references/manual/commands/functionlist.md`
+- **FunctionPath** - The FunctionPath function returns a path to the file containing the named function. - `references/manual/commands/functionpath.md`
+- **Functions_Intro** - For information about other types of Igor functions, please see Function Plotting and User-defined Functions. - `references/manual/commands/functions_intro.md`

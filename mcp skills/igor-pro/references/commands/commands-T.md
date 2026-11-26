@@ -1,0 +1,42 @@
+# Igor Pro commands starting with T
+
+Each line: **Name** - one-line summary - local page to read with read_file for full syntax, flags, outputs, examples.
+
+- **t** - The t function returns the T value for the current chunk of the destination wave when used in a multidimensional wave assignment statement. - `references/manual/commands/t.md`
+- **TabControl** - The TabControl operation creates tab panels for controls. For information about the state or status of the control, use the ControlInfo operation. - `references/manual/commands/tabcontrol.md`
+- **TableInfo** - The TableInfo function returns a string containing a semicolon-separated list of keywords and values that describe a column in a table or overall properties… - `references/manual/commands/tableinfo.md`
+- **Tag** - The Tag operation puts a tag on the target or named graph window or subwindow. - `references/manual/commands/tag.md`
+- **TagVal** - TagVal is a very specialized function that is only valid when called from within the text of a tag as part of a \{} dynamic text escape sequence. - `references/manual/commands/tagval.md`
+- **TagWaveRef** - TagWaveRef is a very specialized function that is only valid when called from within the text of a tag as part of a \{} dynamic text escape sequence. - `references/manual/commands/tagwaveref.md`
+- **tan** - The tan function returns the tangent of angle which is in radians. In complex expressions, angle is complex, and tan(angle) returns a complex value. - `references/manual/commands/tan.md`
+- **tanh** - The tanh function returns the hyperbolic tangent of num: $$ \displaystyle \tanh (x)=\frac{e^{x}-e^{-x}}{e^{x}+e^{-x}}. $$. - `references/manual/commands/tanh.md`
+- **Text2Bezier** - The Text2Bezier operation creates the data for a Bezier curve corresponding to the outline of some text using the supplied font information. - `references/manual/commands/text2bezier.md`
+- **TextBox** - The TextBox operation puts a textbox on the target or named graph. A textbox is an annotation that is not associated with any particular trace. - `references/manual/commands/textbox.md`
+- **TextEncodingCode** - The TextEncodingCode function returns the Igor text encoding code for the named text encoding or 0 if the text encoding is unknown. - `references/manual/commands/textencodingcode.md`
+- **TextEncodingName** - The TextEncodingName function returns one or more text encoding names corresponding to the specified text encoding code. - `references/manual/commands/textencodingname.md`
+- **TextFile** - TextFile is deprecated. Use IndexedFile instead. The TextFile function returns a string containing the name of the indexth TEXT file from the folder specified… - `references/manual/commands/textfile.md`
+- **TextHistogram** - The TextHistogram operation computes the histogram of a text wave where the output bins represent the counts of occurrences of each unique string found in… - `references/manual/commands/texthistogram.md`
+- **ThreadGroupCreate** - The ThreadGroupCreate function creates a thread group containing nt threads and returns a thread ID number. - `references/manual/commands/threadgroupcreate.md`
+- **ThreadGroupGetDF** - ThreadGroupGetDFR should be used instead of ThreadGroupGetDF which causes memory leaks. - `references/manual/commands/threadgroupgetdf.md`
+- **ThreadGroupGetDFR** - The ThreadGroupGetDFR function retrieves a data folder reference from a thread group queue and removes the data folder from the queue. - `references/manual/commands/threadgroupgetdfr.md`
+- **ThreadGroupPutDF** - The ThreadGroupPutDF operation posts data to a preemptive thread group. - `references/manual/commands/threadgroupputdf.md`
+- **ThreadGroupRelease** - The ThreadGroupRelease function releases the thread group referenced by tgID. tgID is the thread group ID returned by ThreadGroupCreate. - `references/manual/commands/threadgrouprelease.md`
+- **ThreadGroupWait** - The ThreadGroupWait function returns index+1 of the first thread found still running after waitms milliseconds or returns zero if all are done. - `references/manual/commands/threadgroupwait.md`
+- **ThreadProcessorCount** - The ThreadProcessorCount function returns the number of processors in your computer. - `references/manual/commands/threadprocessorcount.md`
+- **ThreadReturnValue** - The ThreadReturnValue function returns the value that the specified thread function returned when it exited. Returns NAN if thread is still running. - `references/manual/commands/threadreturnvalue.md`
+- **ThreadStart** - The ThreadStart operation starts the specified function running in a preemptive thread. - `references/manual/commands/threadstart.md`
+- **ticks** - The ticks function returns the number of ticks (approximately 1/60 second) elapsed since Igor was started. - `references/manual/commands/ticks.md`
+- **TickWavesFromAxis** - The TickWavesFromAxis operation generates a pair of waves suitable for use as user tick waves (see User Ticks from Waves). - `references/manual/commands/tickwavesfromaxis.md`
+- **Tile** - The Tile operation tiles the specified objects in the top page layout. - `references/manual/commands/tile.md`
+- **TileWindows** - The TileWindows operation tiles the specified windows in the Igor frame window. - `references/manual/commands/tilewindows.md`
+- **time** - The time function returns a string containing the current local time. The empty parentheses are required. - `references/manual/commands/time.md`
+- **TitleBox** - The TitleBox operation creates the named title box in the target window. - `references/manual/commands/titlebox.md`
+- **ToCommandLine** - The ToCommandLine operation sends command text to the command line without executing the command(s). - `references/manual/commands/tocommandline.md`
+- **ToolsGrid** - The ToolsGrid operation controls the grid you can use for laying out draw or control objects. - `references/manual/commands/toolsgrid.md`
+- **TraceFromPixel** - The TraceFromPixel function returns a string based on an attempt to hit test the provided X and Y coordinates. - `references/manual/commands/tracefrompixel.md`
+- **TraceInfo** - The TraceInfo function returns a string containing a semicolon-separated list of information about the trace in the named graph. - `references/manual/commands/traceinfo.md`
+- **TraceNameList** - The TraceNameList function returns a string containing a list of traces in the graph window or subwindow identified by graphNameStr. - `references/manual/commands/tracenamelist.md`
+- **TraceNameToWaveRef** - The TraceNameToWaveRef function returns a wave reference to the Y wave corresponding to the given trace in the graph window or subwindow named by graphNameStr. - `references/manual/commands/tracenametowaveref.md`
+- **Triangulate3D** - The Triangulate3D operation creates a Delaunay "triangulation" of a 3D scatter wave. - `references/manual/commands/triangulate3d.md`
+- **TrimString** - The TrimString function returns a string identical to str except that leading and trailing whitespace characters are removed. - `references/manual/commands/trimstring.md`
+- **trunc** - The trunc function returns the integer closest to num in the direction of zero. - `references/manual/commands/trunc.md`

@@ -1,0 +1,83 @@
+# Igor Pro commands starting with M
+
+Each line: **Name** - one-line summary - local page to read with read_file for full syntax, flags, outputs, examples.
+
+- **MacroInfo** - The MacroInfo function returns a keyword-value pair list of information about the named macro. - `references/manual/commands/macroinfo.md`
+- **MacroList** - The MacroList function returns a string containing a list of the names of user-defined procedures that start with the Proc, Macro, or Window keywords that… - `references/manual/commands/macrolist.md`
+- **MacroPath** - The MacroPath function returns a path to the file containing the named macro. - `references/manual/commands/macropath.md`
+- **magsqr** - The magsqr function returns the sum of the squares of the real and imaginary parts of the complex number z, that is, the magnitude squared. - `references/manual/commands/magsqr.md`
+- **Make** - The Make operation creates the named waves. Use braces to assign data values when creating the wave. - `references/manual/commands/make.md`
+- **MakeIndex** - The MakeIndex operation sets the data values of indexWave such that they give the ordering of sortKeyWaves. - `references/manual/commands/makeindex.md`
+- **MandelbrotPoint** - The MandelbrotPoint function returns a value between 0 and maxIterations based on the Mandelbrot set complex quadratic recurrence relation z[n] = z[n-1]^2 + c… - `references/manual/commands/mandelbrotpoint.md`
+- **MarcumQ** - The MarcumQ function returns the generalized Q-function defined by the integral. - `references/manual/commands/marcumq.md`
+- **MarkPerfTestTime** - The MarkPerfTestTime operation is used in conjunction with SetIgorOption DebugTimer for performance testing of user-defined functions. - `references/manual/commands/markperftesttime.md`
+- **MatrixBalance** - The MatrixBalance operation permutes and/or scales an NxN real or complex matrix to obtain a similar matrix that is more stable for subsequent calculations… - `references/manual/commands/matrixbalance.md`
+- **MatrixCondition** - MatrixCondition returns the estimated reciprocal of the condition number of a 2D square matrix wave2D. - `references/manual/commands/matrixcondition.md`
+- **MatrixConvolve** - The MatrixConvolve operation convolves a small coefficient matrix kernelWave with srcWave. - `references/manual/commands/matrixconvolve.md`
+- **MatrixCorr** - The MatrixCorr operation computes the correlation, covariance or degree of correlation matrix for the input 1D wave(s). - `references/manual/commands/matrixcorr.md`
+- **MatrixDet** - The MatrixDet function returns the determinant of dataMatrix. The matrix wave must be a real, square matrix or else the returned value will be NaN. - `references/manual/commands/matrixdet.md`
+- **MatrixDot** - The MatrixDot function calculates the inner (scalar) product for two 1D waves. A 1D wave A represents a vector in the sense. - `references/manual/commands/matrixdot.md`
+- **MatrixEigenV** - MatrixEigenV computes the eigenvalues and/or eigenvectors of a square matrix using LAPACK routines. - `references/manual/commands/matrixeigenv.md`
+- **MatrixFactor** - The MatrixFactor operation computes two real-valued output matrices, conceptually called matA and matB, whose matrix product minimizes the Frobenius norm of. - `references/manual/commands/matrixfactor.md`
+- **MatrixFilter** - The MatrixFilter operation performs one of several standard image filter type operations on the destination dataMatrix. - `references/manual/commands/matrixfilter.md`
+- **MatrixGaussJ** - The MatrixGaussJ operation solves matrix expression A*x=b for column vector x given matrix A and column vector b. - `references/manual/commands/matrixgaussj.md`
+- **MatrixGLM** - The MatrixGLM operation solves the general Gauss-Markov Linear Model problem (GLM) which minimizes the 2-norm of a vector y. - `references/manual/commands/matrixglm.md`
+- **MatrixInverse** - The MatrixInverse operation calculates the inverse or the pseudo-inverse of a matrix. srcWave may be real or complex.. - `references/manual/commands/matrixinverse.md`
+- **MatrixLinearSolve** - The MatrixLinearSolve operation solves the linear system matrixA X=matrixB where matrixA is an N-by-N matrix and matrixB* is an N-by-NRHS matrix of the same… - `references/manual/commands/matrixlinearsolve.md`
+- **MatrixLinearSolveTD** - The MatrixLinearSolveTD operation solves the linear system TDMatrix \ X = matrixB. - `references/manual/commands/matrixlinearsolvetd.md`
+- **MatrixLLS** - The MatrixLLS operation solves overdetermined or underdetermined linear systems involving MxN matrixA, using either QR/LQ or SV decompositions. - `references/manual/commands/matrixlls.md`
+- **MatrixLUBkSub** - MatrixLUBkSub provides back substitution for LU decomposition. This operation is used to solve the matrix equation Ax=b after you have performed LU… - `references/manual/commands/matrixlubksub.md`
+- **MatrixLUD** - The MatrixLUD operation computes the LU factorization of a matrix. The general form of the factorization/decomposition is expressed in terms of matrix products. - `references/manual/commands/matrixlud.md`
+- **MatrixLUDTD** - The MatrixLUDTD operation computes the LU factorization of a tri-diagonal matrix. - `references/manual/commands/matrixludtd.md`
+- **MatrixMultiply** - The MatrixMultiply operation calculates matrix expression A*B and puts the result in a matrix wave named M_product generated in the current data folder. - `references/manual/commands/matrixmultiply.md`
+- **MatrixMultiplyAdd** - The MatrixMultiplyAdd operation calculates the matrix expression: where * indicates scalar multiplication and x indicates matrix multiplication. - `references/manual/commands/matrixmultiplyadd.md`
+- **MatrixOp** - The MatrixOp operation evaluates expression and stores the results in destWave. - `references/manual/commands/matrixop.md`
+- **MatrixRank** - The MatrixRank function returns the rank of matrixWaveA subject to the specified condition number. - `references/manual/commands/matrixrank.md`
+- **MatrixReverseBalance** - MatrixReverseBalance inverse-transforms left or right eigenvectors contained in eigenvectorsWave that were computed for a matrix that was balanced using… - `references/manual/commands/matrixreversebalance.md`
+- **MatrixSchur** - The MatrixSchur operation computes for an NxN nonsymmetric srcMatrix, the eigenvalues, the real Schur form A and the matrix of Schur vectors V. - `references/manual/commands/matrixschur.md`
+- **MatrixSolve** - The MatrixSolve operation was superseded by MatrixLLS and is included for backward compatibility only. - `references/manual/commands/matrixsolve.md`
+- **MatrixSparse** - The MatrixSparse operation provides support for basic matrix operations on sparse matrices. The MatrixSparse operation was added in Igor Pro 9.00. - `references/manual/commands/matrixsparse.md`
+- **MatrixSVBkSub** - The MatrixSVBkSub operation does back substitution for SV decomposition. - `references/manual/commands/matrixsvbksub.md`
+- **MatrixSVD** - The MatrixSVD operation uses the singular value decomposition algorithm to decompose an MxN matrixWave into a product of three matrices. - `references/manual/commands/matrixsvd.md`
+- **MatrixTrace** - The matrixTrace function calculates the trace (sum of diagonal elements) of a square matrix. - `references/manual/commands/matrixtrace.md`
+- **MatrixTranspose** - The MatrixTranspose operation swaps rows and columns in the matrix. Does not take complex conj if complex data. You can do that as a follow-on step. - `references/manual/commands/matrixtranspose.md`
+- **max** - The max function returns the greatest value of num1, num2,... num200. If any parameter is NaN, the result is NaN. - `references/manual/commands/max.md`
+- **mean** - The mean function returns the arithmetic mean of the wave for points from x=x1 to x=x2. - `references/manual/commands/mean.md`
+- **MeasureStyledText** - The MeasureStyledText operation takes as input a string optionally containing style codes such as are used in graph annotations and the DrawText operation. - `references/manual/commands/measurestyledtext.md`
+- **median** - The median function returns the median value of the wave for points from x=x1 to x=x2. - `references/manual/commands/median.md`
+- **min** - The min function returns the least value of num1, num2,... num200. If any parameter is NaN, the result is NaN. - `references/manual/commands/min.md`
+- **MLLoadWave** - The MLLoadWave operation loads data from the named Matlab MAT file into single 1D waves (vectors), multidimensional waves (matrices), numeric variables or… - `references/manual/commands/mlloadwave.md`
+- **mod** - The mod function returns the remainder when num is divided by div. The mod function may give unexpected results when num or div is fractional because most… - `references/manual/commands/mod.md`
+- **ModDate** - The ModDate function returns the modification date/time of the wave. The returned value is a double precision Igor date/time value, which is the number of… - `references/manual/commands/moddate.md`
+- **Modify** - We recommend that you use ModifyGraph, ModifyTable, ModifyLayout, or ModifyPanel rather than Modify. - `references/manual/commands/modify.md`
+- **ModifyBoxPlot** - The ModifyBoxPlot operation modifies a box plot trace in the target or named graph. To create a box plot trace, see AppendBoxPlot. - `references/manual/commands/modifyboxplot.md`
+- **ModifyBrowser** - The ModifyBrowser operation modifies the state of the Data Browser according to the specified keywords. - `references/manual/commands/modifybrowser.md`
+- **ModifyCamera** - The ModifyCamera operation is used to change the settings of the named camera. - `references/manual/commands/modifycamera.md`
+- **ModifyContour** - The ModifyContour operation modifies the number, Z value and appearance of the contour level traces associated with contourInstanceName. - `references/manual/commands/modifycontour.md`
+- **ModifyControl** - The ModifyControl operation modifies the named control. ModifyControl works on any kind of existing control. To modify multiple controls, use ModifyControlList. - `references/manual/commands/modifycontrol.md`
+- **ModifyControlList** - The ModifyControlList operation modifies the controls named in the listStr string expression. ModifyControlList works on any kind of existing control. - `references/manual/commands/modifycontrollist.md`
+- **ModifyFreeAxis** - The ModifyFreeAxis operation designates the free axis (created with NewFreeAxis) to follow a controlling axis from which it gets axis range and units… - `references/manual/commands/modifyfreeaxis.md`
+- **ModifyGizmo** - The ModifyGizmo operation changes Gizmo properties. The syntax for the operation depends on what you want to change. - `references/manual/commands/modifygizmo.md`
+- **ModifyGraph** - The ModifyGraph operation modifies the target or named graph. This section of ModifyGraph relates to general graph window settings. - `references/manual/commands/modifygraph.md`
+- **ModifyImage** - The ModifyImage operation changes properties of the given image in the top graph (or the specified graph if /W is used). - `references/manual/commands/modifyimage.md`
+- **ModifyLayout** - The ModifyLayout operation modifies objects in the top layout or in the layout specified by the /W flag. - `references/manual/commands/modifylayout.md`
+- **ModifyPanel** - The ModifyPanel operation modifies properties of the top or named graph or panel window or subwindow. - `references/manual/commands/modifypanel.md`
+- **ModifyProcedure** - The ModifyProcedure operation modifies one or more procedure windows, depending on the /A and /W flags and on the procedure keyword. - `references/manual/commands/modifyprocedure.md`
+- **ModifyTable** - The ModifyTable operation modifies the appearance of the top or named table window or subwindow. - `references/manual/commands/modifytable.md`
+- **ModifyViolinPlot** - The ModifyViolinPlot operation modifies a violin plot trace in the target or named graph. - `references/manual/commands/modifyviolinplot.md`
+- **ModifyWaterfall** - The ModifyWaterfall operation modifies the properties of the waterfall plot in the top or named graph. - `references/manual/commands/modifywaterfall.md`
+- **MoveDataFolder** - The MoveDataFolder operation removes the source data folder (and everything it contains) and places it at the specified location with the original name. - `references/manual/commands/movedatafolder.md`
+- **MoveFile** - The MoveFile operation moves or renames a file on disk. A file is renamed by "moving" it to the same folder it is already in using a different name. - `references/manual/commands/movefile.md`
+- **MoveFolder** - The MoveFolder operation moves or renames a folder on disk. A folder is renamed by "moving" it into the same folder it is already in, but with a different name. - `references/manual/commands/movefolder.md`
+- **MoveString** - The MoveString operation removes the source string variable and places it in the specified location optionally with a new name. - `references/manual/commands/movestring.md`
+- **MoveSubwindow** - The MoveSubwindow operation moves the active or named subwindow to a new location within the host window. - `references/manual/commands/movesubwindow.md`
+- **MoveVariable** - The MoveVariable operation removes the source numeric variable and places it in the specified location optionally with a new name. - `references/manual/commands/movevariable.md`
+- **MoveWave** - The MoveWave operation removes the source wave and places it in the specified location optionally with a new name. - `references/manual/commands/movewave.md`
+- **MoveWindow** - The MoveWindow operation moves the target or specified window to the given coordinates. - `references/manual/commands/movewindow.md`
+- **MPFXEMGPeak** - The MPFXEMGPeak function implements a single exponentially modified Gaussian peak with no Y offset in the format of an all-at-once fitting function. - `references/manual/commands/mpfxemgpeak.md`
+- **MPFXExpConvExpPeak** - The MPFXExpConvExpPeak function implements a single peak with no Y offset in the format of an all-at-once fitting function. - `references/manual/commands/mpfxexpconvexppeak.md`
+- **MPFXGaussPeak** - The MPFXGaussPeak function implements a single Gaussian peak with no Y offset in the format of an all-at-once fitting function. - `references/manual/commands/mpfxgausspeak.md`
+- **MPFXLorentzianPeak** - The MPFXLorentzianPeak function implements a single Lorentzian peak with no Y offset in the format of an all-at-once fitting function. - `references/manual/commands/mpfxlorentzianpeak.md`
+- **MPFXVoigtPeak** - The MPFXVoigtPeak function implements a single Voigt peak with no Y offset in the format of an all-at-once fitting function. - `references/manual/commands/mpfxvoigtpeak.md`
+- **MultiTaperPSD** - The MultiTaperPSD operation estimates the power spectral density of srcWave using Slepian (DPSS) tapers. - `references/manual/commands/multitaperpsd.md`
+- **MultiThreadingControl** - The MultiThreadingControl operation allows you to control how automatic multithreading works with those IGOR operations that support it. - `references/manual/commands/multithreadingcontrol.md`

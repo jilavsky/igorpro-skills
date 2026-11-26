@@ -1,0 +1,61 @@
+# Igor Pro commands starting with D
+
+Each line: **Name** - one-line summary - local page to read with read_file for full syntax, flags, outputs, examples.
+
+- **DataFolderDir** - The DataFolderDir function returns a string containing a listing of some or all of the objects contained in the current data folder or in the data folder… - `references/manual/commands/datafolderdir.md`
+- **DataFolderExists** - The DataFolderExists function returns the truth that the specified data folder exists. - `references/manual/commands/datafolderexists.md`
+- **DataFolderList** - The DataFolderList function returns a string containing a list of data folder names selected based on the matchStr parameter. - `references/manual/commands/datafolderlist.md`
+- **DataFolderRefChanges** - The DataFolderRefChanges function returns the number of changes to the data folder specified by the data folder reference dfr. - `references/manual/commands/datafolderrefchanges.md`
+- **DataFolderRefsEqual** - The DataFolderRefsEqual function returns the truth the two data folder references are the same. - `references/manual/commands/datafolderrefsequal.md`
+- **DataFolderRefStatus** - The DataFolderRefStatus function returns the status of a data folder reference. - `references/manual/commands/datafolderrefstatus.md`
+- **date** - The date function returns a string containing the current date. The formatting of dates depends on your operating system and on your preferences entered in… - `references/manual/commands/date.md`
+- **date2secs** - The date2secs function returns the number of seconds from midnight on 1/1/1904 to the specified date. - `references/manual/commands/date2secs.md`
+- **DateTime** - The DateTime function returns number of seconds from 1/1/1904 to the current local date and time. - `references/manual/commands/datetime.md`
+- **dateToJulian** - The dateToJulian function returns the Julian day number for the specified date. The Julian day starts at noon. - `references/manual/commands/datetojulian.md`
+- **dawson** - The dawson function returns the value of the Dawson integral: $$ \displaystyle F(x)=\exp \left(-x^{2}\right) \int_{0}^{x} \exp \left(t^{2}\right) d t. - `references/manual/commands/dawson.md`
+- **Debugger** - The Debugger operation breaks into the debugger if it is enabled. The Debugger, DebuggerOptions. - `references/manual/commands/debugger.md`
+- **DebuggerOptions** - The DebuggerOptions operation programmatically changes the user-level debugger settings. - `references/manual/commands/debuggeroptions.md`
+- **DefaultFont** - The DefaultFont operation sets the default font to be used in graphs for axis labels, tick mark labels and annotations, and in page layouts for annotations. - `references/manual/commands/defaultfont.md`
+- **DefaultGUIControls** - The DefaultGUIControls operation changes the appearance of user-defined controls. - `references/manual/commands/defaultguicontrols.md`
+- **DefaultGUIFont** - The DefaultGUIFont operation changes the default font for user-defined controls and other Graphical User Interface elements. - `references/manual/commands/defaultguifont.md`
+- **DefaultTextEncoding** - The DefaultTextEncoding operation programmatically changes the default text encoding and experiment text encoding override settings. - `references/manual/commands/defaulttextencoding.md`
+- **defined** - The defined function returns 1 if the symbol is defined 0 if the symbol is not defined. - `references/manual/commands/defined.md`
+- **DefineGuide** - The DefineGuide operation creates or overwrites a user-defined guide line in the target or named window or subwindow. - `references/manual/commands/defineguide.md`
+- **DelayUpdate** - The DelayUpdate operation delays the updating of graphs and tables while executing a macro. - `references/manual/commands/delayupdate.md`
+- **DeleteAnnotations** - The DeleteAnnotations operation lists, in the S_name output variable, and optionally deletes annotations that are hidden for reasons specified by the flags… - `references/manual/commands/deleteannotations.md`
+- **DeleteFile** - The DeleteFile operation deletes a file on disk. fileNameStr can be a full path to the file to be deleted (in which case /P is not needed), a partial path… - `references/manual/commands/deletefile.md`
+- **DeleteFolder** - The DeleteFolder operation deletes a disk folder and all of its contents. - `references/manual/commands/deletefolder.md`
+- **DeletePoints** - The DeletePoints operation deletes numElements elements from the named waves starting from element startElement. - `references/manual/commands/deletepoints.md`
+- **deltax** - The deltax function returns the named wave's Δx value. This is equal to the difference of the X value of point 1 minus the X value of point 0. - `references/manual/commands/deltax.md`
+- **Differentiate** - The Differentiate operation calculates the 1D numerical derivative of a wave. - `references/manual/commands/differentiate.md`
+- **digamma** - The digamma function returns the digamma, or psi function of x. This is the logarithmic derivative of the gamma function. - `references/manual/commands/digamma.md`
+- **Dilogarithm** - The Dilogarithm function returns the dilogarithm for real or complex argument z. The dilogarithm is a special case of the polylogarithm defined by. - `references/manual/commands/dilogarithm.md`
+- **DimDelta** - The DimDelta function returns the scale factor delta of the given dimension. - `references/manual/commands/dimdelta.md`
+- **DimOffset** - The DimOffset function returns the scaling offset of the given dimension. - `references/manual/commands/dimoffset.md`
+- **DimSize** - The DimSize function returns the size of the given dimension. dimNumber is one of the following. - `references/manual/commands/dimsize.md`
+- **Dir** - The Dir operation returns a listing of all the objects in the specified data folder. - `references/manual/commands/dir.md`
+- **Display** - The Display operation creates a new graph window or subwindow, and appends the named waves, if any. Waves are displayed as 1D traces. - `references/manual/commands/display.md`
+- **DisplayHelpTopic** - The DisplayHelpTopic operation displays a help topic as if a help link had been clicked in an Igor help file. - `references/manual/commands/displayhelptopic.md`
+- **DisplayProcedure** - The DisplayProcedure operation displays the named function, macro or line by bringing the procedure window it is defined in to the front with the function… - `references/manual/commands/displayprocedure.md`
+- **DoAlert** - The DoAlert operation displays an alert dialog and waits for user to click a button. - `references/manual/commands/doalert.md`
+- **DoIgorMenu** - The DoIgorMenu operation allows an Igor programmer to invoke Igor's built-in menu items. - `references/manual/commands/doigormenu.md`
+- **DoUpdate** - The DoUpdate operation updates windows and dependent objects. Call DoUpdate from an Igor procedure to force Igor to update any objects that need updating. - `references/manual/commands/doupdate.md`
+- **DoWindow** - The DoWindow operation controls various window parameters and aspects. There are additional forms for DoWindow when the /S or /T flags are used (see below). - `references/manual/commands/dowindow.md`
+- **DoXOPIdle** - The DoXOPIdle operation sends an IDLE event to all open XOPs. This operation is very specialized and unusual. - `references/manual/commands/doxopidle.md`
+- **DPSS** - The DPSS operation generates Slepian's Discrete Prolate Spheroidal Sequences. - `references/manual/commands/dpss.md`
+- **DrawAction** - The DrawAction operation deletes, inserts, and reads back a named drawing object group or the entire draw layer. - `references/manual/commands/drawaction.md`
+- **DrawArc** - The DrawArc operation draws a circular counterclockwise arc with center at xOrg and yOrg. - `references/manual/commands/drawarc.md`
+- **DrawBezier** - The DrawBezier operation draws a Bezier curve with first point of the curve positioned at xOrg and yOrg. - `references/manual/commands/drawbezier.md`
+- **DrawLine** - The DrawLine operation draws a line in the target graph, layout or control panel from (x0,y0) to (x1,y1). - `references/manual/commands/drawline.md`
+- **DrawOval** - The DrawOval operation draws an oval in the target graph, layout or control panel within the rectangle defined by left, top, right and bottom. - `references/manual/commands/drawoval.md`
+- **DrawPICT** - The DrawPICT operation draws the named picture in the target graph, layout or control panel. - `references/manual/commands/drawpict.md`
+- **DrawPoly** - The DrawPoly operation draws a polygon in the target graph, layout or control panel. - `references/manual/commands/drawpoly.md`
+- **DrawRect** - The DrawRect operation draws a rectangle in the target graph, layout or control panel within the rectangle defined by left, top, right, and bottom. - `references/manual/commands/drawrect.md`
+- **DrawRRect** - The DrawRRect operation draws a rounded rectangle in the target graph, layout or control panel within the rectangle defined by left, top, right, and bottom. - `references/manual/commands/drawrrect.md`
+- **DrawText** - The DrawText operation draws the specified text in the target graph, layout or control panel. - `references/manual/commands/drawtext.md`
+- **DrawUserShape** - The DrawUserShape operation is similar to built-in drawing operations except the shape is defined by a user-defined function which is executed when the shape… - `references/manual/commands/drawusershape.md`
+- **DSPDetrend** - The DSPDetrend operation removes from srcWave a trend defined by the best fit of the specified function to the data in srcWave. - `references/manual/commands/dspdetrend.md`
+- **DSPPeriodogram** - The DSPPeriodogram operation calculates the periodogram, cross-spectral density or the degree of coherence of the input waves. - `references/manual/commands/dspperiodogram.md`
+- **Duplicate** - The Duplicate operation creates new waves; the names of which are specified by destWaveNames and the contents, data type and scaling of which are identical to… - `references/manual/commands/duplicate.md`
+- **DuplicateDataFolder** - The DuplicateDataFolder operation makes a copy of the source data folder and everything in it and places the copy at the specified location with the specified… - `references/manual/commands/duplicatedatafolder.md`
+- **DWT** - The DWT operation performs discrete wavelet transform on the input wave srcWaveName. - `references/manual/commands/dwt.md`

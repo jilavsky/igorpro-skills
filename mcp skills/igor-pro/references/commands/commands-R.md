@@ -1,0 +1,43 @@
+# Igor Pro commands starting with R
+
+Each line: **Name** - one-line summary - local page to read with read_file for full syntax, flags, outputs, examples.
+
+- **r** - The r function returns the current layer index of the destination wave when used in a multidimensional wave assignment statement. - `references/manual/commands/r.md`
+- **r2polar** - The r2polar function returns a complex value in polar coordinates derived from the complex value z which is assumed to be in rectangular coordinates. - `references/manual/commands/r2polar.md`
+- **RatioFromNumber** - The RatioFromNumber operation computes two integers whose ratio is equal to num +/- maxError. The ratio is returned in variables V_numerator and V_denominator. - `references/manual/commands/ratiofromnumber.md`
+- **ReadVariables** - The ReadVariables operation reads variables into an experiment. This operation is used automatically by Igor Pro when you open an experiment. - `references/manual/commands/readvariables.md`
+- **real** - The real function returns the real component of the complex value z. cmplx, conj, imag, p2rect, r2polar. - `references/manual/commands/real.md`
+- **Redimension** - The Redimension operation remakes the named waves, preserving their contents as much as possible. - `references/manual/commands/redimension.md`
+- **Remez** - The Remez operation calculates the coefficients for digital filters given a desired frequency response as input. - `references/manual/commands/remez.md`
+- **Remove** - When interpreting a command, Igor treats the Remove operation as RemoveFromGraph, RemoveFromTable, or RemoveFromLayout, depending on the target window. - `references/manual/commands/remove.md`
+- **RemoveByKey** - The RemoveByKey function returns kwListStr after removing the keyword-value pair specified by keyStr. - `references/manual/commands/removebykey.md`
+- **RemoveContour** - The RemoveContour operation removes the traces, and releases memory associated with the contour of contourInstanceName in the target or named graph. - `references/manual/commands/removecontour.md`
+- **RemoveEnding** - The RemoveEnding function returns str with endingStr removed from the end. If you omit endingStr, it returns str with one grapheme removed from the end. - `references/manual/commands/removeending.md`
+- **RemoveFromGizmo** - The RemoveFromGizmo operation removes the specified object from the specified list and optionally performs an update. - `references/manual/commands/removefromgizmo.md`
+- **RemoveFromGraph** - The RemoveFromGraph operation removes the specified wave traces from the target or named graph. - `references/manual/commands/removefromgraph.md`
+- **RemoveFromLayout** - Deprecated. Use RemoveLayoutObjects. The RemoveFromLayout operation removes the specified objects from the top layout. - `references/manual/commands/removefromlayout.md`
+- **RemoveFromList** - The RemoveFromList function returns listStr after removing the item or items specified by itemOrListStr. - `references/manual/commands/removefromlist.md`
+- **RemoveFromTable** - The RemoveFromTable operation removes the specified columns from the top table. - `references/manual/commands/removefromtable.md`
+- **RemoveImage** - The RemoveImage operation removes the given image from the target or named graph. - `references/manual/commands/removeimage.md`
+- **RemoveLayoutObjects** - The RemoveLayoutObjects operation removes the specified object or objects from the top page layout, or from the layout specified by the /W flag. - `references/manual/commands/removelayoutobjects.md`
+- **RemoveListItem** - The RemoveListItem function returns listStr after removing the item specified by the list index index. - `references/manual/commands/removelistitem.md`
+- **RemovePath** - The RemovePath operation removes a path from the list of symbolic paths. - `references/manual/commands/removepath.md`
+- **Rename** - The Rename operation renames waves, strings, or numeric variables from oldName to newName. - `references/manual/commands/rename.md`
+- **RenameDataFolder** - The RenameDataFolder operation changes the name of the source data folder to the new name. - `references/manual/commands/renamedatafolder.md`
+- **RenamePath** - The RenamePath operation renames an existing symbolic path from oldName to newName. - `references/manual/commands/renamepath.md`
+- **RenamePICT** - The RenamePICT operation renames an existing picture from oldName to newName. - `references/manual/commands/renamepict.md`
+- **RenameWindow** - The RenameWindow operation renames an existing window or subwindow from oldName to newName. - `references/manual/commands/renamewindow.md`
+- **ReorderImages** - The ReorderImages operation changes the ordering of graph images to that specified in the braces. - `references/manual/commands/reorderimages.md`
+- **ReorderTraces** - The ReorderTraces operation changes the ordering of graph traces to that specified in the braces. - `references/manual/commands/reordertraces.md`
+- **ReplaceNumberByKey** - The ReplaceNumberByKey function returns kwListStr after replacing the numeric value of the keyword-value pair specified by keyStr. - `references/manual/commands/replacenumberbykey.md`
+- **ReplaceString** - The ReplaceString function returns inStr after replacing any instance of replaceThisStr with withThisStr. - `references/manual/commands/replacestring.md`
+- **ReplaceStringByKey** - The ReplaceStringByKey function returns kwListStr after replacing the text value of the keyword-value pair specified by keyStr. - `references/manual/commands/replacestringbykey.md`
+- **ReplaceText** - The ReplaceText operation replaces the text in the most recently created or changed annotation or in the annotation specified by /W=winName and/N=name. - `references/manual/commands/replacetext.md`
+- **ReplaceWave** - The ReplaceWave operation replaces waves displayed in a graph with other waves. - `references/manual/commands/replacewave.md`
+- **ReplicateString** - The ReplicateString function returns a string containing str repeated totalNumCopies times. - `references/manual/commands/replicatestring.md`
+- **Resample** - The Resample operation resamples waveName by interpolating or up-sampling (set by /UP=upSample), lowpass filtering, and decimating or down-sampling (set by… - `references/manual/commands/resample.md`
+- **ResumeUpdate** - The ResumeUpdate operation cancels the corresponding PauseUpdate. This operation is of use in macros. It is not allowed from the command line. - `references/manual/commands/resumeupdate.md`
+- **Reverse** - The Reverse operation reverses data in a wave along a specified dimension. It does not accept text waves. - `references/manual/commands/reverse.md`
+- **rightx** - The rightx function returns the X value corresponding to point N of the named 1D wave of length N. - `references/manual/commands/rightx.md`
+- **Rotate** - The Rotate operation rotates the Y values of waves in wavelist by rotPoints points. - `references/manual/commands/rotate.md`
+- **round** - The round function returns the integer value closest to num. The rounding method is "away from zero". - `references/manual/commands/round.md`

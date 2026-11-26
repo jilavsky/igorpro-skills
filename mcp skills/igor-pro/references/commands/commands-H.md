@@ -1,0 +1,47 @@
+# Igor Pro commands starting with H
+
+Each line: **Name** - one-line summary - local page to read with read_file for full syntax, flags, outputs, examples.
+
+- **Hanning** - The WindowFunction operation has replaced the Hanning operation. You can use Hanning in preparation for performing an FFT on a wave if the wave is not an… - `references/manual/commands/hanning.md`
+- **Hash** - The Hash function returns a hash of the data in inputStr. The length of the resulting hash string is fixed for each algorithm. - `references/manual/commands/hash.md`
+- **HCluster** - The HCluster operation computes the information needed to create a cluster dendrogram using an agglomerative hierarchical clustering algorithm. - `references/manual/commands/hcluster.md`
+- **hcsr** - The hcsr function returns the horizontal coordinate of the named cursor (A through J) in the coordinate system of the top (or named) graph's X axis. - `references/manual/commands/hcsr.md`
+- **HDF5AttributeInfo** - The HDF5AttributeInfo function stores information about the attribute such as its rank, dimension sizes and type in the HDF5DataInfo structure pointed to by di. - `references/manual/commands/hdf5attributeinfo.md`
+- **HDF5CloseFile** - The HDF5CloseFile operation closes an HDF5 file previously opened by HDF5OpenFile or HDF5CreateFile. If /A is used, it closes all open HDF5 files. - `references/manual/commands/hdf5closefile.md`
+- **HDF5CloseGroup** - The HDF5CloseGroup operation closes an HDF5 group that you opened via HDFCreateGroup or HDF5OpenGroup. - `references/manual/commands/hdf5closegroup.md`
+- **HDF5Control** - The HDF5Control operation provides control of aspects of Igor's use of the HDF5 file format. - `references/manual/commands/hdf5control.md`
+- **HDF5CreateFile** - The HDF5CreateFile operation creates a new HDF5 file or overwrites an existing HDF5 file if /O is used and then opens the file for read/write. - `references/manual/commands/hdf5createfile.md`
+- **HDF5CreateGroup** - The HDF5CreateGroup operation creates an HDF5 group in the HDF5 file. It returns a group ID via groupID. - `references/manual/commands/hdf5creategroup.md`
+- **HDF5CreateLink** - The HDF5CreateLink operation creates a new hard, soft or external link in an HDF5 file. - `references/manual/commands/hdf5createlink.md`
+- **HDF5DatasetInfo** - The HDF5DatasetInfo function stores information about the dataset such as its rank, dimension sizes and type in the HDF5DataInfo structure referenced by di. - `references/manual/commands/hdf5datasetinfo.md`
+- **HDF5DimensionScale** - The HDF5DimensionScale operation supports the creation and querying of HDF5 dimension scales. - `references/manual/commands/hdf5dimensionscale.md`
+- **HDF5Dump** - The HDF5Dump operation dumps information about the specified HDF5 file. - `references/manual/commands/hdf5dump.md`
+- **HDF5DumpErrors** - The HDF5DumpErrors operation dumps information about HDF5 library errors encountered by Igor. - `references/manual/commands/hdf5dumperrors.md`
+- **HDF5FlushFile** - The HDF5FlushFile operation flushes an HDF5 file previously opened by HDF5OpenFile or HDF5CreateFile. If /A is used, it flushs all open HDF5 files. - `references/manual/commands/hdf5flushfile.md`
+- **HDF5LibraryInfo** - The HDF5LibraryInfo function returns information about the HDF5 library used by the currently-running version of Igor. - `references/manual/commands/hdf5libraryinfo.md`
+- **HDF5LinkInfo** - The HDF5LinkInfo function stores information about an HDF5 link in the HDF5LinkInfoStruct structure pointed to by li. - `references/manual/commands/hdf5linkinfo.md`
+- **HDF5ListAttributes** - The HDF5ListAttributes operation returns a list of attributes associated with the object specified by locationID and nameStr. - `references/manual/commands/hdf5listattributes.md`
+- **HDF5ListGroup** - The HDF5ListGroup operation returns a list of the names of objects in the HDF5 file or group specified by locationID and nameStr. - `references/manual/commands/hdf5listgroup.md`
+- **HDF5LoadData** - The HDF5LoadData operation loads a dataset or attribute from an HDF5 file. - `references/manual/commands/hdf5loaddata.md`
+- **HDF5LoadGroup** - The HDF5LoadGroup operation loads an HDF5 group and its datasets into an Igor Pro data folder. It optionally recursively loads subgroups and their datasets. - `references/manual/commands/hdf5loadgroup.md`
+- **HDF5LoadImage** - The HDF5LoadImage operation loads an image dataset and in some cases a palette dataset from an HDF5 file using the format specified in the HDF5 Image and… - `references/manual/commands/hdf5loadimage.md`
+- **HDF5OpenFile** - The HDF5OpenFile operation opens an existing HDF5 file for reading or for reading and writing. - `references/manual/commands/hdf5openfile.md`
+- **HDF5OpenGroup** - The HDF5OpenGroup operation opens an existing HDF5 group in the HDF5 file. - `references/manual/commands/hdf5opengroup.md`
+- **HDF5SaveData** - The HDF5SaveData operation saves a single wave in an HDF5 file as a dataset or as an attribute if /A is present. - `references/manual/commands/hdf5savedata.md`
+- **HDF5SaveGroup** - The HDF5SaveGroup operation saves the contents of an Igor data folder in an HDF5 file. - `references/manual/commands/hdf5savegroup.md`
+- **HDF5SaveImage** - The HDF5SaveImage operation saves an image dataset and in some cases a palette dataset in an HDF5 file using the format specified in the HDF5 Image and… - `references/manual/commands/hdf5saveimage.md`
+- **HDF5TypeInfo** - The HDF5TypeInfo function stores information about the datatype of a dataset or attribute in the HDF5DataTypeInfo structure referenced by dti. - `references/manual/commands/hdf5typeinfo.md`
+- **HDF5UnlinkObject** - The HDF5UnlinkObject operation unlinks the specified object (a group, dataset, datatype or link) from the HDF5 file. - `references/manual/commands/hdf5unlinkobject.md`
+- **hermite** - The hermite function returns the Hermite polynomial of order n: $$ \displaystyle H_{n}(x)=(-1)^{n} \exp \left(x^{2}\right) \frac{d^{n}}{d x^{n}} \exp… - `references/manual/commands/hermite.md`
+- **hermiteGauss** - The hermiteGauss function returns the normalized Hermite polynomial of order n. - `references/manual/commands/hermitegauss.md`
+- **HideIgorMenus** - The HideIgorMenus operation hides the named built-in menus or, if none are explicitly named, hides all built-in menus in the menu bar. - `references/manual/commands/hideigormenus.md`
+- **HideInfo** - The HideInfo operation removes the info panel from a graph if it was previously shown by the ShowInfo operation. - `references/manual/commands/hideinfo.md`
+- **HideProcedures** - The HideProcedures operation hides all the procedure windows without closing or killing them. - `references/manual/commands/hideprocedures.md`
+- **HideTools** - The HideTools operation hides the tool palette in the top graph or control panel if it was previously shown by the ShowTools operation. - `references/manual/commands/hidetools.md`
+- **HilbertTransform** - The HilbertTransform operation computes the Hilbert transformation of srcWave, which is a real or complex (single or double precision) wave of 1-3 dimensions. - `references/manual/commands/hilberttransform.md`
+- **Histogram** - The Histogram operation generates a histogram of the data in srcWaveName and puts the result in destWaveName or in W_Histogram or in the wave specified by… - `references/manual/commands/histogram.md`
+- **hyperG0F1** - The hyperG0F1 function returns the confluent hypergeometric limit function. - `references/manual/commands/hyperg0f1.md`
+- **hyperG1F1** - The hyperG1F1 function returns the confluent hypergeometric function $$ \displaystyle { }_{1} F_{1}(a, b, z)=\sum_{n=0}^{\infty} \frac{(a)_{n} z^{n}}{(b)_{n}… - `references/manual/commands/hyperg1f1.md`
+- **hyperG2F1** - The hyperG2F1 function returns the confluent hypergeometric function $$ \displaystyle { }_{2} F_{1}(a, b, c; z)=\sum_{n=0}^{\infty} \frac{(a)_{n}(b)_{n}… - `references/manual/commands/hyperg2f1.md`
+- **hyperGNoise** - The hyperGNoise function returns a pseudo-random value from the hypergeometric distribution whose probability distribution function is. - `references/manual/commands/hypergnoise.md`
+- **hyperGPFQ** - The hyperGPFQ function returns the generalized hypergeometric function. - `references/manual/commands/hypergpfq.md`

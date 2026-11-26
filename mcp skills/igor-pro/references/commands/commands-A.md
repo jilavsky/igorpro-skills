@@ -1,0 +1,48 @@
+# Igor Pro commands starting with A
+
+Each line: **Name** - one-line summary - local page to read with read_file for full syntax, flags, outputs, examples.
+
+- **Abort** - The Abort operation aborts procedure execution. The optional errorMessageStr is a string expression, which, if present, specifies the message to be displayed… - `references/manual/commands/abort.md`
+- **abs** - The abs function returns the absolute value of the real number num. To calculate the absolute value of a complex number, use cabs. - `references/manual/commands/abs.md`
+- **acos** - The acos function returns the inverse cosine of num in radians in the range [0,π]. - `references/manual/commands/acos.md`
+- **acosh** - The acosh function returns the inverse hyperbolic cosine of num. In complex expressions, num is complex, and acosh returns a complex value. - `references/manual/commands/acosh.md`
+- **AddFIFOData** - The AddFIFOData operation evaluates FIFO_channelExpr expressions as double precision floating point and places values into the named FIFO. - `references/manual/commands/addfifodata.md`
+- **AddFIFOVectData** - The AddFIFOVectData operation is similar to AddFIFOData except the expressions use a keyword to allow either a single numeric value for a normal channel or a… - `references/manual/commands/addfifovectdata.md`
+- **AddListItem** - The AddListItem function returns listStr after adding itemStr to it. listStr should contain items separated by listSepStr which typically is ";". - `references/manual/commands/addlistitem.md`
+- **AddMovieAudio** - The AddMovieAudio operation adds audio samples to the audio track of the currently open movie. - `references/manual/commands/addmovieaudio.md`
+- **AddMovieFrame** - The AddMovieFrame operation adds the top graph, page layout, Gizmo Window, or the specified picture to the currently open movie. - `references/manual/commands/addmovieframe.md`
+- **AddWavesToBoxPlot** - Adds additional 1D waves to a pre-existing box plot trace created by AppendBoxPlot. - `references/manual/commands/addwavestoboxplot.md`
+- **AddWavesToViolinPlot** - Adds additional 1D waves to a pre-existing violin plot trace created by AppendViolinPlot. - `references/manual/commands/addwavestoviolinplot.md`
+- **AdoptFiles** - The AdoptFiles operation adopts external files and waves into the current experiment. - `references/manual/commands/adoptfiles.md`
+- **airyA** - The airyA function returns the value of the Airy Ai (x) function: $$ \displaystyle \operatorname{Ai}(x)=\frac{1}{\pi} \sqrt{\frac{x}{3}} K_{1 /… - `references/manual/commands/airya.md`
+- **airyAD** - The airyAD function returns the value of the derivative of the Airy function. - `references/manual/commands/airyad.md`
+- **airyB** - The airyB function returns the value of the Airy Bi (x) function: $$ \displaystyle B i(x)=\sqrt{\frac{x}{3}}\left[I_{-1 / 3}\left(\frac{2}{3} x^{3 /… - `references/manual/commands/airyb.md`
+- **airyBD** - The airyBD function returns the value of the derivative Bi' (x) of the Airy function. - `references/manual/commands/airybd.md`
+- **alog** - The alog function returns 10num. - `references/manual/commands/alog.md`
+- **AnnotationInfo** - The AnnotationInfo function returns a string containing a semicolon-separated list of information about the named annotation in the named graph or page layout… - `references/manual/commands/annotationinfo.md`
+- **AnnotationList** - The AnnotationList function returns a semicolon-separated list of annotation names from the named graph or page layout window or subwindow. - `references/manual/commands/annotationlist.md`
+- **APMath** - The APMath operation provides arbitrary precision calculation of basic mathematical expressions. - `references/manual/commands/apmath.md`
+- **Append** - The Append operation is interpreted as AppendToGraph, AppendToTable, or AppendToLayout, depending on the target window. - `references/manual/commands/append.md`
+- **AppendBoxPlot** - The AppendBoxPlot operation appends a box plot trace to the target or named graph. A box plot is a way to display a summary of the distribution of data values. - `references/manual/commands/appendboxplot.md`
+- **AppendImage** - The AppendImage operation appends the matrix as an image to the target or named graph. By default the image is plotted versus the left and bottom axes. - `references/manual/commands/appendimage.md`
+- **AppendLayoutObject** - The AppendLayoutObject operation appends a single object to the top layout or to the layout specified via the /W flag. - `references/manual/commands/appendlayoutobject.md`
+- **AppendMatrixContour** - The AppendMatrixContour operation appends to the target or named graph a contour of a matrix of z values with autoscaled contour levels, using the Rainbow… - `references/manual/commands/appendmatrixcontour.md`
+- **AppendText** - The AppendText operation appends a carriage return and textStr to the most recently created annotation, or to the named annotation in the target or named… - `references/manual/commands/appendtext.md`
+- **AppendToGizmo** - The AppendToGizmo operation appends a Gizmo object or attribute operation to the top Gizmo window or to the Gizmo window specified by the /N flag. - `references/manual/commands/appendtogizmo.md`
+- **AppendToGraph** - The AppendToGraph operation appends the named waves as traces in the target or named graph. By default the traces are plotted versus the left and bottom axes. - `references/manual/commands/appendtograph.md`
+- **AppendToLayout** - The AppendToLayout operation appends the specified objects to the top layout. - `references/manual/commands/appendtolayout.md`
+- **AppendToTable** - The AppendToTable operation appends the specified columns to the top table. - `references/manual/commands/appendtotable.md`
+- **AppendViolinPlot** - The AppendViolinPlot operation appends a violin plot trace to the target or named graph. - `references/manual/commands/appendviolinplot.md`
+- **AppendXYZContour** - The AppendXYZContour operation appends to the target or named graph a contour of a 2D wave consisting of XYZ triples with autoscaled contour levels and using… - `references/manual/commands/appendxyzcontour.md`
+- **area** - The area function returns the signed area between the named wave and the line y=0 from x=x1 to x=x2 using trapezoidal integration, accounting for the wave's X… - `references/manual/commands/area.md`
+- **areaXY** - The areaXY function returns the signed area between the named YWaveName and the line y=0 from x=x1 to x=x2 using trapezoidal integration, using X values… - `references/manual/commands/areaxy.md`
+- **asin** - The asin function returns the inverse sine of num in radians in the range [-π/2,π/2]. - `references/manual/commands/asin.md`
+- **asinh** - The asinh function returns the inverse hyperbolic sine of num. In complex expressions, num is complex, and asinh returns a complex value. - `references/manual/commands/asinh.md`
+- **atan** - The atan function returns the inverse tangent of num in radians. In complex expressions, num is complex, and atan returns a complex value. - `references/manual/commands/atan.md`
+- **atan2** - The atan2 function returns the angle in radians whose tangent is y1 ÷x1. Results are in the range -π to π. - `references/manual/commands/atan2.md`
+- **atanh** - The atanh function returns the inverse hyperbolic tangent of num. In complex expressions, num is complex, and atanh returns a complex value. - `references/manual/commands/atanh.md`
+- **AutoPositionWindow** - The AutoPositionWindow operation positions the window specified by windowName relative to the next lower window of the same kind or relative to the window… - `references/manual/commands/autopositionwindow.md`
+- **AxisInfo** - The AxisInfo function returns a string containing a semicolon-separated list of information about the named axis in the named graph window or subwindow. - `references/manual/commands/axisinfo.md`
+- **AxisLabel** - The AxisLabel function returns a string containing the axis label for the named axis in the named graph window or subwindow. - `references/manual/commands/axislabel.md`
+- **AxisList** - The AxisList function returns a semicolon-separated list of axis names from the named graph window or subwindow. - `references/manual/commands/axislist.md`
+- **AxisValFromPixel** - The AxisValFromPixel function returns an axis value corresponding to the local graph pixel coordinate in the graph window or subwindow. - `references/manual/commands/axisvalfrompixel.md`
